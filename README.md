@@ -5,7 +5,8 @@ Pretty much all of them build on the source code of the [OpenJDK](https://openjd
 
 ## TL;DR
 
-In most cases, use the latest [Adoptium OpenJDK LTS version](https://adoptium.net/releases.html?variant=openjdk17&jvmVariant=hotspot).
+In most cases, use the latest [Adoptium OpenJDK LTS version](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot) for your platform architecture (which usually is `x64`).
 
+## Distributions
 
 
