@@ -1,7 +1,7 @@
 # Which Version of JDK Should I Use?
 
-There are plenty of Java™ Development Kits (JDK) distributions available. 
-Pretty much all of them build on the source code of the [OpenJDK](https://openjdk.java.net). 
+There are plenty of Java™ Development Kits (JDK) distributions available.  
+Pretty much all of them build on the source code of the [OpenJDK](https://openjdk.java.net).  
 The distributions differ in licences, commercial support, supported platforms, and update frequency.
 
 ## TL;DR
