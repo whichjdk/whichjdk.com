@@ -2,11 +2,25 @@
 
 There are plenty of Java™ Development Kits (JDK) distributions available. 
 Pretty much all of them build on the source code of the [OpenJDK](https://openjdk.java.net). 
-The distributions differ in licences, commercial support, supported platforms and installation packages, and update frequency.
+The distributions differ in licences, commercial support, supported platforms, and update frequency.
 
 ## TL;DR
 
-In most cases, use the latest [Adoptium Eclipse Temurin OpenJDK LTS version](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot) for your platform architecture (which usually is `x64`).
+In most cases, use the latest [Adoptium Eclipse Temurin OpenJDK LTS version](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot).  
+Your platform architecture most likely is `x64`.  
+Install using sdkman (on macOS or Linux) or using the MSI installer (Windows).
+
+## Decision Tree
+
+Use the same JDK for development, CI, and production. 
+
+So, how do you run your services in production?
+
+* I don`t know -> Adoptium 11 
+* Kubernetes or Docker -> Adoptium 11 
+* Directly on cloud compute instances -> Your cloud vendor`s OpenJDK build
+* Lambda/Serverless -> Oracle GraalVM 
+
 
 ## Distributions
 
