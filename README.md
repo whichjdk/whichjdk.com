@@ -6,7 +6,7 @@ The distributions differ in licences, commercial support, supported platforms, a
 
 ## TL;DR
 
-In most cases, use the latest [Adoptium Eclipse Temurin OpenJDK LTS version](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot).  
+In most cases, use [Adoptium Eclipse Temurin OpenJDK 11](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot).  
 Your platform architecture most likely is `x64`.  
 Install using sdkman (on macOS or Linux) or using the MSI installer (Windows).
 
