@@ -73,7 +73,7 @@ Also, based on this volatile licensing history, it is not predictable, how futur
 👎 Do not use _Oracle Java SE Development Kit (JDK)_, unless you know, what you are doing.
 
 
-### Adaptium
+### Adaptium (formerly: AdoptOpenJDK)
 TBD
 
 ### Azul Zulu
@@ -85,7 +85,19 @@ TBD
 
 ### Cloud Vendor Builds
 
-TBD
+Since Oracle changed the support and license policy for its OpenJDK builds, major cloud providers (which run many, many Java applications) decided to establish their own managed OpenJDK builds and providing long-term updates. Apparantly, this is to avoid risks, especially lawsuits against Oracle.
+
+#### Amazon Corretto
+
+https://aws.amazon.com/de/corretto/
+Official Docker Images: https://hub.docker.com/_/amazoncorretto
+
+
+#### Microsoft Build of OpenJDK
+#### SapMachine
+#### Red Hat OpenJDK
+
+
 
 
 ## Docker Images
