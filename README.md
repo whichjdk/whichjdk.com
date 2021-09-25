@@ -73,7 +73,10 @@ Also, based on this volatile licensing history, it is not predictable, how futur
 👎 Do not use _Oracle Java SE Development Kit (JDK)_, unless you know, what you are doing.
 
 
-### Adaptium (formerly: AdoptOpenJDK)
+### Adoptium Adoptium Eclipse Temurin 
+TBD
+
+### AdoptOpenJDK
 TBD
 
 ### Azul Zulu
@@ -93,6 +96,7 @@ https://aws.amazon.com/de/corretto/
 Official Docker Images: https://hub.docker.com/_/amazoncorretto
 
 
+#### Alibaba
 #### Microsoft Build of OpenJDK
 #### SapMachine
 #### Red Hat OpenJDK
