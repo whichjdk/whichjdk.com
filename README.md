@@ -2,7 +2,7 @@
 
 There are plenty of Java™ Development Kits (JDK) distributions available.  
 Pretty much all of them build on the source code of the [OpenJDK](https://openjdk.java.net), which is the open source reference implementation of the Java SE Platform Specification.  
-The distributions differ in licences, commercial support, supported platforms, and update frequency.
+The distributions differ in licenses, commercial support, supported platforms, and update frequency.
 
 ## TL;DR
 
