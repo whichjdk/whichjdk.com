@@ -8,18 +8,6 @@ The distributions differ in licences, commercial support, supported platforms, a
 
 Use [Adoptium Eclipse Temurin OpenJDK 17](https://adoptium.net/releases.html?variant=openjdk17&jvmVariant=hotspot) and make sure your local version matches the CI and production version. 
 
-## Decision Tree
-
-Use the same JDK for development, CI, and production. 
-
-So, how do you run your services in production?
-
-* I don`t know -> Adoptium 11 
-* Kubernetes or Docker -> Adoptium 11 
-* Directly on cloud compute instances -> Your cloud vendor`s OpenJDK build
-* Lambda/Serverless -> Oracle GraalVM 
-
-
 ## Releases
 
 Under the current [JDK release model](https://openjdk.java.net/projects/jdk/), a new feature release with a new major version number is planned every six months, in March and September. Additionally, there are quarterly bug fix updates.
