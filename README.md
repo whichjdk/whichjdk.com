@@ -22,22 +22,24 @@ So, how do you run your services in production?
 
 ## Releases
 
-Under the current [JDK release model](https://openjdk.java.net/projects/jdk/), a new feature release with a new major version number is planned every six months, in March and September. Each feature release will get two updates before the next feature release.
+Under the current [JDK release model](https://openjdk.java.net/projects/jdk/), a new feature release with a new major version number is planned every six months, in March and September. Additionally, there are quarterly bug fix updates.
 
 Every three years, the September release will be a Long term release (LTS), which gets updates for at least three years (and possibly longer).
 
 JDK Version	| Type | Release Date |	Description
 --- | --- | --- | ---
-*8*   | *LTS*     | *03/2014* | *Last LTS version under previous release model. No more free update by Oracle. AdoptOpenJDK [plans updates](https://adoptopenjdk.net/support.html) until 05/2026. Anyway, upgrate to a new release is strongly recommended!*
+**8**   | **LTS**     | **03/2014** | **Last LTS version under previous release model. No more free update by Oracle. AdoptOpenJDK [plans updates](https://adoptopenjdk.net/support.html) until 05/2026. Anyway, upgrate to a new release is strongly recommended!**
 9   | Feature | 09/2017	| New release model was introduced.
 10  | Feature | 03/2018	| 
-11  | LTS     | 09/2018	| Widely used LTS version. Plan upgrade to version 17 within the next months is recommended.
+**11**  | **LTS**     | **09/2018**	| **Widely used LTS version. Plan upgrade to version 17 within the next months is recommended.**
 12  | Feature | 03/2019	| 
 13  | Feature | 09/2019	| 
 14  | Feature | 03/2020	| 
 15  | Feature | 09/2020	| 
 16  | Feature | 03/2021	| 
-17  | LTS     | 09/2021	| Current LTS version.
+**17*  | **LTS**     | **09/2021**	| **Current LTS version.**
+
+Users are adviced to decide, if they stick with the latest LTS version, or if they go with the latest feature release and upgrade to the new feature release every six months. If uncertain, it is a good advice to stick with the LTS version, as Java is quite a stable programming language.
 
 
 ## Distributions
