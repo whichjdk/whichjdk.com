@@ -28,7 +28,7 @@ Every three years, the September release will be a Long term release (LTS), whic
 
 JDK Version	| Type | Release Date |	Description
 --- | --- | --- | ---
-8   | LTS     | 03/2014 | Last LTS version under previous release model. No more free update by Oracle. AdoptOpenJDK [plans updates](https://adoptopenjdk.net/support.html) until 05/2026. Anyway, upgrate to a new release is strongly recommended!
+*8   | LTS     | 03/2014 | Last LTS version under previous release model. No more free update by Oracle. AdoptOpenJDK [plans updates](https://adoptopenjdk.net/support.html) until 05/2026. Anyway, upgrate to a new release is strongly recommended!*
 9   | Feature | 09/2017	| New release model was introduced.
 10  | Feature | 03/2018	| 
 11  | LTS     | 09/2018	| Widely used LTS version. Plan upgrade to version 17 within the next months is recommended.
