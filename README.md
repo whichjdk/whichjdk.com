@@ -41,8 +41,7 @@ But there are no builds that you can download.
 
 Oracle provides OpenJDK builds for Linux, macOS and windows in a compressed archive format.
 
-These builds will only be updated for a 6 month period. Updates and security patches will not be available after this short period.
-E.g. the latest OpenJDK 11 build was [11.0.2+9](https://jdk.java.net/archive/) while the current OpenJDK version is [11.0.12+7](https://wiki.openjdk.java.net/display/JDKUpdates/JDK11u).
+These builds will only be updated for a 6 month period. Updates and security patches will not be available after this short period. This also applies for LTS versions! E.g. the latest OpenJDK 11 build was [11.0.2+9](https://jdk.java.net/archive/) while the current OpenJDK version is [11.0.12+7](https://wiki.openjdk.java.net/display/JDKUpdates/JDK11u).
 
 👎 Do not use _OpenJDK builds by Oracle_.
 
