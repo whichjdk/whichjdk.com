@@ -1,14 +1,12 @@
 # Which Version of JDK Should I Use?
 
 There are plenty of Java™ Development Kits (JDK) distributions available.  
-Pretty much all of them build on the source code of the [OpenJDK](https://openjdk.java.net).  
+Pretty much all of them build on the source code of the [OpenJDK](https://openjdk.java.net), which is the open source reference implementation of the Java SE Platform Specification.  
 The distributions differ in licences, commercial support, supported platforms, and update frequency.
 
 ## TL;DR
 
-In most cases, use [Adoptium Eclipse Temurin OpenJDK 11](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot).  
-Your platform architecture most likely is `x64`.  
-Install using sdkman (on macOS or Linux) or using the MSI installer (Windows).
+Use [Adoptium Eclipse Temurin OpenJDK 17](https://adoptium.net/releases.html?variant=openjdk17&jvmVariant=hotspot) and make sure your local version matches the CI and production version. 
 
 ## Decision Tree
 
@@ -22,22 +20,27 @@ So, how do you run your services in production?
 * Lambda/Serverless -> Oracle GraalVM 
 
 
+## Releases
+
+Under the current [JDK release model](https://openjdk.java.net/projects/jdk/), a new feature release with a new major version number is planned every six months, in March and September. Each feature release will get two updates before the next feature release.
+
+Every three years, the September release will be a Long term release (LTS), which gets updates for at least three years (and possibly longer).
+
+JDK Version	| Type | Release Date |	Description
+--- | --- | --- | ---
+8   | LTS     | 03/2014 | Last LTS version under previous release model. No more free update by Oracle. AdoptOpenJDK [plans updates](https://adoptopenjdk.net/support.html) until 05/2026. Anyway, upgrate to a new release is strongly recommended!
+9   | Feature | 09/2017	| New release model was introduced.
+10  | Feature | 03/2018	| 
+11  | LTS     | 09/2018	| 
+12  | Feature | 03/2019	| 
+13  | Feature | 09/2019	| 
+14  | Feature | 03/2020	| 
+15  | Feature | 09/2020	| 
+16  | Feature | 03/2021	| 
+17  | LTS     | 09/2021	| 
+
+
 ## Distributions
-
-| Distribution                     | Licence  | Comment  |
-|---|---|---|
-| AdoptOpenJDK                     |          | Recommended up to OpenJDK 16. AdoptOpenJDK has been rebranded as Adoptium |
-| Adoptium Eclipse Temurin         |          | Recommended for OpenJDK 17 and newer.         |
-| Bellsoft Liberica JDK            |          |          | 
-| Oracle GraalVM                   |          |          | 
-| Oracle Java SE Development Kit   |          |          | 
-| jdk.java.net OpenJDK             | gplv2+ce |          |
-| Amazon Corretto                  | GPL      | Standard OpenJDK for Amazon Linux 2. LTS releases. |
-| Azul Zulu                        |          |          | 
-| Microsoft Build of OpenJDK       |          |          | 
-| SapMachine                       |          |          | 
-| Red Hat OpenJDK                  |          |          | 
-
 
 ### openjdk.java.net
 
