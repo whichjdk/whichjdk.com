@@ -37,7 +37,7 @@ JDK Version	| Type | Release Date |	Description
 14  | Feature | 03/2020	| 
 15  | Feature | 09/2020	| 
 16  | Feature | 03/2021	| 
-**17*  | **LTS**     | **09/2021**	| **Current LTS version.**
+**17**  | **LTS**     | **09/2021**	| **Current LTS version.**
 
 Users are adviced to decide, if they stick with the latest LTS version, or if they go with the latest feature release and upgrade to the new feature release every six months. If uncertain, it is a good advice to stick with the LTS version, as Java is quite a stable programming language.
 
