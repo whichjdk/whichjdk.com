@@ -99,6 +99,11 @@ The website and older releases are kept online to access archived releases.
 
 
 ### Azul Zulu
+
+[Website](https://www.azul.com) | 
+[Releases](https://www.azul.com/downloads/?package=jdk#download-openjdk) | 
+[Docker Images](https://hub.docker.com/r/azul/zulu-openjdk)
+
 Azul Systems, Inc., has specialized in professional Java technology and commercial support for JDK.
 Azul has a high industry reputation and is engaged in various working groups to evolve the Java platform.
 
@@ -107,7 +112,7 @@ Also, Azul provides builds for special requirements, such as stipped down JREs, 
 
 The only downside of these builds is the dependency to a single private company, that may suddenly change its license or update policies.
 
-✅ _Azul Zulu_ builds are a good choice.
+✅ _Azul Zulu Builds of OpenJDK_ builds are a good choice.
 
 ### BellSoft Liberica JDK
 TBD
