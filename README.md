@@ -41,7 +41,7 @@ Oracle provides OpenJDK builds for Linux, macOS and windows in a compressed arch
 
 These builds will only be updated for a 6 month period. Updates and security patches will not be available after this short period. This also applies for LTS versions! E.g. the latest OpenJDK 11 build was [11.0.2+9](https://jdk.java.net/archive/) while the current OpenJDK version is [11.0.12+7](https://wiki.openjdk.java.net/display/JDKUpdates/JDK11u).
 
-👎 Do not use _OpenJDK builds by Oracle_.
+⛔️ Do not use _OpenJDK builds by Oracle_.
 
 
 ### Oracle Java SE Development Kit (JDK)
@@ -65,7 +65,7 @@ Version 17 is published under the [Oracle No-Fee Terms and Conditions (NFTC)](ht
  
 Also, based on this volatile licensing history, it is not predictable, how future version will be licensed.
 
-👎 Do not use _Oracle Java SE Development Kit (JDK)_, unless you know, what you are doing.
+⛔️ Do not use _Oracle Java SE Development Kit (JDK)_, unless you know, what you are doing.
 
 
 ### Adoptium Eclipse Temurin 
@@ -84,7 +84,7 @@ In contrast to AdoptOpenJDK, Adoptium will not provide builds with the OpenJ9 vi
 The Eclipse Temurin buids are high-quality, vendor-neutral, and TCK-tested under a permissive license.
 Adoptium ensures, it will continue to build binaries for LTS releases as long as the corresponding upstream source is actively maintained.
 
-👍 Adoptium Eclipse Temurin OpenJDK builds are highly recommended.
+✅ Adoptium Eclipse Temurin OpenJDK builds are highly recommended.
 
 ### AdoptOpenJDK
 
