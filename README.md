@@ -97,7 +97,7 @@ The AdoptOpenJDK project was the predecessor of Eclipse Adoptium and provided hi
 
 The website and older releases are kept online to access archived releases.
 
-👎 Do not use _AdoptOpenJDK_ anymore. Use _Adoptium Eclipse Temurin_ OpenJDK builds instead.
+⚠️ Do not use _AdoptOpenJDK_ anymore. Use _Adoptium Eclipse Temurin_ OpenJDK builds instead.
 
 ### Azul Zulu
 TBD
