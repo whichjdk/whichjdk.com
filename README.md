@@ -63,7 +63,10 @@ Also, based on this volatile licensing history, it is not predictable, how futur
 
 
 ### Adoptium Adoptium Eclipse Temurin 
-TBD
+
+Adoptium is top-level project under the Eclipse Foundation, which provides resources and a professional governance model for open source software.
+The Adoptium Working Group consists of major companies and organizations that have a strategic interest in the Java technology, including Red Hat, IBM, Microsoft, Azul, and the iJUG.
+
 
 ### AdoptOpenJDK
 TBD
