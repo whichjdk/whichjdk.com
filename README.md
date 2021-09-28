@@ -64,7 +64,7 @@ Also, based on this volatile licensing history, it is not predictable, how futur
 
 ### Adoptium Eclipse Temurin 
 
-[Website](https://adoptium.net) |  
+[Website](https://adoptium.net) | 
 [Releases](https://adoptium.net/archive.html) | 
 [Source](https://github.com/adoptium/temurin-build) | 
 [Docker Images](https://hub.docker.com/_/eclipse-temurin/)
