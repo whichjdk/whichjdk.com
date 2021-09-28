@@ -48,7 +48,6 @@ These builds will only be updated for a 6 month period. Updates and security pat
 
 [Website](https://www.oracle.com/java/) | 
 [Releases](https://www.oracle.com/java/technologies/downloads/archive/) | 
-Sources (n/a) | 
 Docker Images (n/a)
 
 Oracle provides a commercial version of the OpenJDK, which are based on the exactly same sources of the OpenJDK: The Oracle Java SE Development Kit (JDK).
@@ -72,7 +71,6 @@ Also, based on this volatile licensing history, it is not predictable, how futur
 
 [Website](https://adoptium.net) | 
 [Releases](https://adoptium.net/archive.html) | 
-[Sources](https://github.com/adoptium/temurin-build) | 
 [Docker Images](https://hub.docker.com/_/eclipse-temurin/)
 
 Eclipse Adoptium is a top-level project under the Eclipse Foundation, which provides resources and a professional governance model for open source software.
@@ -90,7 +88,6 @@ Adoptium ensures, it will continue to build binaries for LTS releases as long as
 
 [Website](https://adoptopenjdk.net) | 
 [Releases](https://adoptopenjdk.net/archive.html?variant=openjdk11&jvmVariant=hotspot) | 
-[Sources](https://github.com/AdoptOpenJDK) | 
 [Docker Images](https://hub.docker.com/_/adoptopenjdk)
 
 The AdoptOpenJDK project was the predecessor of Eclipse Adoptium and provided high-quality OpenJDK builds, both for the default HotSpot and the OpenJ9 virtual machine.
