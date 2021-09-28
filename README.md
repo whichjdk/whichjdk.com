@@ -1,12 +1,10 @@
 # Which Version of JDK Should I Use?
 
-There are plenty of Java™ Development Kits (JDK) distributions available.  
-Pretty much all of them build on the source code of the [OpenJDK](https://openjdk.java.net), which is the open source reference implementation of the Java SE Platform Specification.  
-The distributions differ in licenses, commercial support, supported platforms, and update frequency.
+There are plenty of Java™ Development Kits (JDK) distributions available. Pretty much all of them build on the source code of the [OpenJDK](https://openjdk.java.net), which is the open source reference implementation of the Java SE Platform Specification. The distributions differ in licenses, commercial support, supported platforms, and update frequency.
 
 ## TL;DR
 
-Use [Adoptium Eclipse Temurin OpenJDK 17](https://adoptium.net/releases.html?variant=openjdk17&jvmVariant=hotspot) and make sure your local version matches the CI and production version. 
+Use [Adoptium Eclipse Temurin OpenJDK 17 LTS version](https://adoptium.net/releases.html?variant=openjdk17&jvmVariant=hotspot) and make sure your local version matches the CI and production version. 
 
 ## Releases
 
@@ -27,10 +25,13 @@ JDK Version	| Type    | Release Date | New	Features         | Description
 16          | Feature | 03/2021	     | Records              | EOL. Upgrade to 17 now!
 **17**      | **LTS** | **09/2021**	 | Sealed Classes       | Current LTS version.
 
-Users are adviced to decide, if they stick with the latest LTS version, or if they go with the latest feature release and upgrade to the new feature release every six months. If uncertain, it is a good advice to stick with the LTS version, as Java is quite a stable programming language.
+You have to decide, if you want to stick with the latest LTS version, or if you go with the latest feature release and upgrade every six months. 
+Both ways are OK.
+If uncertain, it is a good advice to stick with the LTS version, as Java is quite a stable programming language.
 
-The OpenJDK project is mangaged using [openjdk.java.net](https://openjdk.java.net), where you can find specifications, source code, and mailing lists.
-But there are no builds that you can download.
+The OpenJDK project itself is mangaged on [openjdk.java.net](https://openjdk.java.net), where you can find specifications, source code, and mailing lists.
+But there are no builds that you can download. 
+You need to choose a distribution.
 
 ## Distributions
 
@@ -47,7 +48,7 @@ These builds will only be updated for a 6 month period. Updates and security pat
 
 [Website](https://www.oracle.com/java/) | 
 [Releases](https://www.oracle.com/java/technologies/downloads/archive/) | 
-Source (n/a) | 
+Sources (n/a) | 
 Docker Images (n/a)
 
 Oracle provides a commercial version of the OpenJDK, which are based on the exactly same sources of the OpenJDK: The Oracle Java SE Development Kit (JDK).
@@ -71,7 +72,7 @@ Also, based on this volatile licensing history, it is not predictable, how futur
 
 [Website](https://adoptium.net) | 
 [Releases](https://adoptium.net/archive.html) | 
-[Source](https://github.com/adoptium/temurin-build) | 
+[Sources](https://github.com/adoptium/temurin-build) | 
 [Docker Images](https://hub.docker.com/_/eclipse-temurin/)
 
 Eclipse Adoptium is a top-level project under the Eclipse Foundation, which provides resources and a professional governance model for open source software.
@@ -86,7 +87,17 @@ Adoptium ensures, it will continue to build binaries for LTS releases as long as
 👍 Adoptium Eclipse Temurin OpenJDK builds are highly recommended.
 
 ### AdoptOpenJDK
-TBD
+
+[Website](https://adoptopenjdk.net) | 
+[Releases](https://adoptopenjdk.net/archive.html?variant=openjdk11&jvmVariant=hotspot) | 
+[Sources](https://github.com/AdoptOpenJDK) | 
+[Docker Images](https://hub.docker.com/_/adoptopenjdk)
+
+The AdoptOpenJDK project was the predecessor of Eclipse Adoptium and provided high-quality OpenJDK builds, both for the default HotSpot and the OpenJ9 virtual machine.
+
+The website and older releases are kept online to access archived releases.
+
+👎 Do not use _AdoptOpenJDK_ anymore. Use _Adoptium Eclipse Temurin_ OpenJDK builds instead.
 
 ### Azul Zulu
 TBD
