@@ -62,11 +62,23 @@ Also, based on this volatile licensing history, it is not predictable, how futur
 👎 Do not use _Oracle Java SE Development Kit (JDK)_, unless you know, what you are doing.
 
 
-### Adoptium Adoptium Eclipse Temurin 
+### Adoptium Eclipse Temurin 
 
-Adoptium is top-level project under the Eclipse Foundation, which provides resources and a professional governance model for open source software.
-The Adoptium Working Group consists of major companies and organizations that have a strategic interest in the Java technology, including Red Hat, IBM, Microsoft, Azul, and the iJUG.
+[Website](https://adoptium.net)
+[Releases](https://adoptium.net/archive.html)
+[Source](https://github.com/adoptium/temurin-build)
+[Docker Images](https://hub.docker.com/_/eclipse-temurin/)
 
+Eclipse Adoptium is a top-level project under the Eclipse Foundation, which provides resources and a professional governance model for open source software.
+The Adoptium Working Group consists of major companies and organizations that have a strategic interest in the Java technology, including Red Hat, IBM, Microsoft, Azul, and the iJUG. The former AdoptOpenJDK project has moved to Eclipse Adoptium.
+
+The Adoptium OpenJDK builds are called _Eclipse Temurin_ to distinguish to project and the builds.
+In contrast to AdoptOpenJDK, Adoptium will not provide builds with the OpenJ9 virtual machine.
+
+The Eclipse Temurin buids are high-quality, vendor-neutral, and TCK-tested under a permissive license.
+Adoptium ensures, it will continue to build binaries for LTS releases as long as the corresponding upstream source is actively maintained.
+
+👍 Adoptium Eclipse Temurin OpenJDK builds are highly recommended.
 
 ### AdoptOpenJDK
 TBD
@@ -77,6 +89,8 @@ TBD
 ### BellSoft Liberica JDK
 TBD
 
+### IBM Semeru
+TBD
 
 ### Cloud Vendor Builds
 
