@@ -45,7 +45,12 @@ These builds will only be updated for a 6 month period. Updates and security pat
 
 ### Oracle Java SE Development Kit (JDK)
 
-Oracle also has a commercial version of the OpenJDK, which are based on the exactly same sources of the OpenJDK: The Oracle Java SE Development Kit (JDK).
+[Website](https://www.oracle.com/java/) | 
+[Releases](https://www.oracle.com/java/technologies/downloads/archive/) | 
+Source (n/a) | 
+Docker Images (n/a)
+
+Oracle provides a commercial version of the OpenJDK, which are based on the exactly same sources of the OpenJDK: The Oracle Java SE Development Kit (JDK).
 Oracle provides updates regular updates and security patches for these builds, especially 
 
 The main issue with these builds is Oracle's licensing policy.
@@ -119,6 +124,8 @@ TBD
 ### What is the best way to install a JDK for local development?
 
 ### What is the difference between JDK and JRE?
+
+### What about Java EE?
 
 ### What should I install for a Java desktop application?
 
