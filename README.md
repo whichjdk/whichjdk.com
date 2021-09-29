@@ -16,7 +16,7 @@ Under the current [JDK release model](https://openjdk.java.net/projects/jdk/), a
 
 Every three years, the September release will be a Long term release (LTS), which gets updates for at least three years (and possibly longer).
 
-JDK Version	| Type    | Release Date | New	Features         | Description
+JDK Version	| Type    | Release Date | Highlights           | Description
 ----------- | ------- | ------------ | ---------------------| ---
 **8**       | **LTS** | **03/2014**  | Lambdas              |  Last LTS version under previous release model. Free updates by Oracle ended. AdoptOpenJDK [plans updates](https://adoptopenjdk.net/support.html) until 05/2026. Anyway, upgrade to a 11 or 17 is strongly recommended!
 9           | Feature | 09/2017	     | Modules              | New release model was introduced. EOL. Upgrade to 11 or 17 now!
