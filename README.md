@@ -2,8 +2,8 @@
 
 To build and run Java applications, a Java Compiler, Java Runtime Libraries, and a Virtual Machine are required, that implement the Java Platform, Standard Edition ("Java SE") specification.
 
-The [OpenJDK](https://openjdk.java.net) is the open source reference implementation of the Java SE Platform Specification, but it is only.
-There are a number of distributions by different vendors available, that provide builds based on the OpenJDK source code.
+The [OpenJDK](https://openjdk.java.net) is the open source reference implementation of the Java SE Platform Specification, but it is only the source code.
+Binary releases are provided by different vendors.
 These distributions differ in licenses, commercial support, supported platforms, and update frequency.
 
 ## TL;DR
