@@ -193,9 +193,7 @@ Microsoft provides releases for major development platforms.
 [Releases](http://dragonwell-jdk.io) | 
 [Docker Images](https://github.com/alibaba/dragonwell11/wiki/Use-Dragonwell-11-docker-images)
 
-Same applies for Alibaba. 
-
-They provide an OpenJDK build which includes back ports and some _extra features_.
+Alibaba provides an OpenJDK build which includes back ports and some _extra features_.
 
 ⛔️ Do not use _Alibaba Dragonwell_, unless you are forced by your government.
 
