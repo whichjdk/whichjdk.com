@@ -42,6 +42,10 @@ You need to choose a distribution.
 
 ### OpenJDK builds by Oracle (jdk.java.net)
 
+[Website](https://jdk.java.net) | 
+[Releases](https://jdk.java.net) | 
+Docker Images (n/a)
+
 Oracle provides OpenJDK builds for Linux, macOS and windows in a compressed archive format.
 
 These builds will only be updated for a 6 month period. Updates and security patches will not be available after this short period. This also applies for LTS versions! E.g. the latest OpenJDK 11 build was [11.0.2+9](https://jdk.java.net/archive/) while the current OpenJDK version is [11.0.12+7](https://wiki.openjdk.java.net/display/JDKUpdates/JDK11u).
@@ -69,7 +73,7 @@ Version 17 is published under the [Oracle No-Fee Terms and Conditions (NFTC)](ht
  
 Also, based on this volatile licensing history, it is not predictable, how future version will be licensed.
 
-⛔️ Do not use _Oracle Java SE Development Kit (JDK)_, unless you know, what you are doing.
+⛔️ Do not use _Oracle Java SE Development Kit (JDK)_, unless you know what you are doing.
 
 
 ### Adoptium Eclipse Temurin 
@@ -85,7 +89,8 @@ The Adoptium OpenJDK builds are called _Eclipse Temurin_ to distinguish to proje
 In contrast to AdoptOpenJDK, Adoptium will not provide builds with the OpenJ9 virtual machine.
 
 The Eclipse Temurin buids are high-quality, vendor-neutral, and TCK-tested under a permissive license.
-Adoptium ensures, it will continue to build binaries for LTS releases as long as the corresponding upstream source is actively maintained.
+
+Adoptium states, it will continue to build binaries for LTS releases as long as the corresponding upstream source is actively maintained.
 
 ✅ Adoptium Eclipse Temurin OpenJDK builds are highly recommended.
 
@@ -137,18 +142,36 @@ A downside of these builds is the dependency to a single company, that may sudde
 ✅ _BellSoft Liberica JDK_ builds are a good choice.
 
 
-### IBM Semeru
-TBD
+### IBM Semeru Runtime
+
+[Website](https://developer.ibm.com/languages/java/semeru-runtimes/) | 
+[Releases](https://developer.ibm.com/languages/java/semeru-runtimes/downloads/) | 
+Docker Images (n/a)
+
+IBM developed its own version of the Java Virtual Machine, called J9 and it was open-sourced as _Eclipse OpenJ9_.
+It is an alternative to the default HotSpot Java Virtual Machine, but it never gained much popularity.
+
+IBM now provides builds called _Semeru Runtime_ based on the Eclipse OpenJ9 Java Virtual Machine and some OpenJDK class libraries.
+
+⛔️ There is no reason to use _IBM Semeru Runtime_, unless you know what you are doing.
 
 
-### Cloud Vendor Builds
+### Amazon Corretto
 
-Since Oracle changed the support and license policy for its OpenJDK builds, major cloud providers (which run many, many Java applications) decided to establish their own managed OpenJDK builds and providing long-term updates. Apparantly, this is to avoid risks, especially lawsuits against Oracle.
+[Website](https://aws.amazon.com/de/corretto/) | 
+[Releases](https://aws.amazon.com/de/corretto/) | 
+[Docker Images](https://hub.docker.com/_/amazoncorretto)
 
-#### Amazon Corretto
+Since Oracle changed the support and license policy for its OpenJDK builds, major cloud providers decided to establish their own managed OpenJDK builds and providing long-term updates. Apparantly, this is to avoid risks, especially lawsuits against Oracle.
 
-https://aws.amazon.com/de/corretto/
-Official Docker Images: https://hub.docker.com/_/amazoncorretto
+In 2018, AWS published _Corretto_, yet another OpenJDK build.
+
+AWS includes back ports of bug fixes from newer OpenJDK versions and [claims](https://aws.amazon.com/corretto/faqs/) that they would add patches that might not yet be integrated in the OpenJDK project.
+
+Amazon provides releases for major development platforms and an optimized version for its own Amazon Linux 2.
+
+⚠️ Use _Corretto_, only if you run Java applications directly on Amazon Linux 2 in AWS.
+
 
 
 #### Alibaba
@@ -157,10 +180,15 @@ Official Docker Images: https://hub.docker.com/_/amazoncorretto
 #### Red Hat OpenJDK
 
 
+## GraalVM
+
+## SubstrateVM
 
 
 ## Docker Images
 TBD
+
+
 
 
 ## FAQs
