@@ -15,7 +15,7 @@ Use [Adoptium Eclipse Temurin OpenJDK 17 LTS version](https://adoptium.net/relea
 
 Under the current [JDK release model](https://openjdk.java.net/projects/jdk/), a new feature release with a new major version number is planned every six months, in March and September. Additionally, there are quarterly bug fix updates.
 
-Every three years, the September release will be a Long term release (LTS), which gets updates for at least three years (and possibly longer).
+Every three years, the September release will be a Long-Term-Support (LTS) release, which gets updates for at least three years.
 
 JDK Version	| Type    | Release Date | Highlights           | Description
 ----------- | ------- | ------------ | ---------------------| ---
