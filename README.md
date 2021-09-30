@@ -32,7 +32,7 @@ JDK Version	| Type    | Release Date | Highlights           | Description
 
 You have to decide, if you want to stick with the latest LTS version, or if you go with the latest feature release and upgrade every six months. 
 Both ways are OK.
-If uncertain, it is a good advice to stick with the LTS version, as Java is quite a stable programming language.
+If uncertain, stick with the latest LTS version.
 
 The OpenJDK project itself is mangaged on [openjdk.java.net](https://openjdk.java.net), where you can find specifications, source code, and mailing lists.
 But there are no builds that you can download. 
