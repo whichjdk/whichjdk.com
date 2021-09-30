@@ -173,9 +173,34 @@ Amazon provides releases for major development platforms and an optimized versio
 ⚠️ Use _Corretto_, only if you run Java applications directly on Amazon Linux 2 in AWS.
 
 
+### Microsoft Build of OpenJDK
 
-#### Alibaba
-#### Microsoft Build of OpenJDK
+[Website](https://www.microsoft.com/openjdk) | 
+[Releases](https://docs.microsoft.com/en-us/java/openjdk/download) | 
+[Docker Images](https://docs.microsoft.com/en-us/java/openjdk/containers)
+
+In 2021, Microsoft published _Microsoft Build of OpenJDK_, yet another OpenJDK build.
+
+Microsoft may include back ports of bug fixes from newer OpenJDK versions and claims that they would add patches that might not yet be integrated in the OpenJDK project.
+
+Microsoft provides releases for major development platforms.
+
+⚠️ Use _Microsoft Build of OpenJDK_, only if you run Java applications directly on Azure.
+
+#### Alibaba Dragonwell
+
+[Website](http://dragonwell-jdk.io) | 
+[Releases](http://dragonwell-jdk.io) | 
+[Docker Images](https://github.com/alibaba/dragonwell11/wiki/Use-Dragonwell-11-docker-images)
+
+Same applies for Alibaba. 
+
+They provide an OpenJDK build which includes back ports and some _extra features_.
+
+⛔️ Do not use _Alibaba Dragonwell_, unless you are forced by your government.
+
+
+
 #### SapMachine
 #### Red Hat OpenJDK
 
