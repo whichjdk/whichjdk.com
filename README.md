@@ -109,18 +109,32 @@ The website and older releases are kept online to access archived releases.
 [Releases](https://www.azul.com/downloads/?package=jdk#download-openjdk) | 
 [Docker Images](https://hub.docker.com/r/azul/zulu-openjdk)
 
-Azul Systems, Inc., has specialized in professional Java technology and commercial support for JDK.
+Azul Systems, Inc., has specialized in professional Java technologies and commercial support for JDK.
 Azul has a high industry reputation and is engaged in various working groups to evolve the Java platform.
 
-Azul provides open source OpenJDK builds called _Azul Zulu_ for pretty much all operating systems and architectures.
-Also, Azul provides builds for special requirements, such as stipped down JREs, builds including OpenJFX, and much more. 
+Azul provides open source OpenJDK builds called _Azul Zulu_ for many operating systems and architectures.
+Additionally, Azul provides builds for special requirements, such as stipped down JREs and builds including OpenJFX. 
 
-The only downside of these builds is the dependency to a single private company, that may suddenly change its license or update policies.
+A downside of these builds is the dependency to a single company, that may suddenly change its license or update policies.
 
-✅ _Azul Zulu Builds of OpenJDK_ builds are a good choice.
+✅ _Azul Zulu Builds of OpenJDK_ are a good choice.
 
 ### BellSoft Liberica JDK
-TBD
+
+[Website](https://bell-sw.com) | 
+[Releases](https://bell-sw.com/pages/downloads/?) | 
+[Docker Images](https://hub.docker.com/u/bellsoft)
+
+Similar to Azul, BellSoft has specialized in professional Java technologies and commercial support for JDK.
+Also, BellSoft has a high industry reputation and is engaged in various working groups to evolve the Java platform.
+
+BellSoft provides open source OpenJDK builds called _Liberica JDK_ for pretty much all operating systems and architectures.
+
+The popular Spring Boot framework chose Liberica JDK as runtime for their [buildpack](https://github.com/paketo-buildpacks/bellsoft-liberica).
+
+A downside of these builds is the dependency to a single company, that may suddenly change its license or update policies.
+
+✅ _BellSoft Liberica JDK_ builds are a good choice.
 
 
 ### IBM Semeru
