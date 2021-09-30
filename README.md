@@ -86,7 +86,6 @@ Eclipse Adoptium is a top-level project under the Eclipse Foundation, which prov
 The Adoptium Working Group consists of major companies and organizations that have a strategic interest in the Java technology, including Red Hat, IBM, Microsoft, Azul, and the iJUG. The former AdoptOpenJDK project has moved to Eclipse Adoptium.
 
 The Adoptium OpenJDK builds are called _Eclipse Temurin_ to distinguish to project and the builds.
-In contrast to AdoptOpenJDK, Adoptium will not provide builds with the OpenJ9 virtual machine.
 
 The Eclipse Temurin buids are high-quality, vendor-neutral, and TCK-tested under a permissive license.
 
