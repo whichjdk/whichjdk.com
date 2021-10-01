@@ -17,12 +17,12 @@ Under the current [JDK release model](https://openjdk.java.net/projects/jdk/), a
 
 Every three years, the September release will be a Long-Term-Support (LTS) release, which gets updates for at least three years.
 
-JDK Version	| Type    | Release Date | Highlights           | Description
+JDK Version	| Type    | Release Date | Highlights           | Recommendation
 ----------- | ------- | ------------ | ---------------------| ---
-**8**       | **LTS** | **03/2014**  | Lambdas              |  Last LTS version under previous release model. Free updates by Oracle ended, but still maintained by others. Upgrade to a 11 or 17 is strongly recommended!
+**8**       | **LTS** | **03/2014**  | Lambdas              |  Last LTS version under previous release model. Free updates by Oracle ended, but still maintained by others. Upgrade to a 11 or 17 within the next months!
 9           | Feature | 09/2017	     | Modules              | New release model was introduced. EOL. Upgrade to 11 or 17 now!
 10          | Feature | 03/2018	     | var                  | EOL. Upgrade to 11 or 17 now!
-**11**      | **LTS** | **09/2018**	 | New HTTP Client      | Widely used LTS version. Plan upgrade to version 17 within the next months is recommended.
+**11**      | **LTS** | **09/2018**	 | New HTTP Client      | Widely used LTS version. Plan upgrade to version 17 within the next months.
 12          | Feature | 03/2019	     |                      | EOL. Upgrade to 17 now!
 13          | Feature | 09/2019	     |                      | EOL. Upgrade to 17 now!
 14          | Feature | 03/2020	     | Switch expressions   | EOL. Upgrade to 17 now!
