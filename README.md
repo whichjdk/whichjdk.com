@@ -225,6 +225,12 @@ TBD
 
 
 
-## Contributions
+## About
+
+This site is maintained by [Jochen Christ](https://twitter.com/jochen_christ).
+Any recommendations or opinions represented on this site are personal and based on long-term professional experience.
+The author is not associated with any of the organizations stated here.
+
+Found an error or something is missing? Please [raise an issue](https://github.com/whichjdk/whichjdk.com/issues/new) or [create a pull request](https://github.com/whichjdk/whichjdk.com/pulls).
 
 Java and OpenJDK are trademarks or registered trademarks of Oracle and/or its affiliates.
