@@ -198,16 +198,14 @@ Alibaba provides an OpenJDK build which includes back ports and some _extra feat
 
 
 
-#### SapMachine
-#### Red Hat OpenJDK
+### SapMachine
+TBD
+
+### Red Hat OpenJDK
+TBD
 
 
 ## GraalVM
-
-## SubstrateVM
-
-
-## Docker Images
 TBD
 
 
