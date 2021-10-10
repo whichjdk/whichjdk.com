@@ -3,7 +3,7 @@
 To build and run Java applications, a Java Compiler, Java Runtime Libraries, and a Virtual Machine are required that implement the Java Platform, Standard Edition ("Java SE") specification.
 
 The [OpenJDK](https://openjdk.java.net) is the open source reference implementation of the Java SE Specification, but it is only the source code.
-Binary distributions are provided by different vendors for a number of supported platforms. 
+Binary distributions are provided by different vendors for a number of supported platforms.
 These distributions differ in licenses, commercial support, supported platforms, and update frequency.
 
 This site gives independent, yet opinonated recommendations.
@@ -11,7 +11,7 @@ This site gives independent, yet opinonated recommendations.
 
 ## TL;DR
 
-✅ Recommendation: Use [Adoptium Eclipse Temurin 17](#adoptium-eclipse-temurin) and ensure that your local version matches the CI and production version. 
+✅ Recommendation: Use [Adoptium Eclipse Temurin 17](#adoptium-eclipse-temurin) and ensure that your local version matches the CI and production version.
 
 ## Releases
 
@@ -32,20 +32,20 @@ JDK Version	| Type    | Release Date | Highlights           | Recommendation
 16          | Feature | 03/2021	     | Records              | EOL. Upgrade to 17 now!
 **17**      | **LTS** | **09/2021**	 | Sealed Classes       | Current LTS version.
 
-You have to decide, if you want to stick with the latest LTS version, or if you go with the latest feature release and upgrade every six months. 
+You have to decide, if you want to stick with the latest LTS version, or if you go with the latest feature release and upgrade every six months.
 Both ways are OK.
 If uncertain, stick with the latest LTS version.
 
 The OpenJDK project itself is mangaged on [openjdk.java.net](https://openjdk.java.net), where you can find specifications, source code, and mailing lists.
-But there are no builds that you can download. 
+But there are no builds that you can download.
 You need to choose a distribution.
 
 ## Distributions
 
 ### OpenJDK builds by Oracle (jdk.java.net)
 
-[Website](https://jdk.java.net) | 
-[Releases](https://jdk.java.net) | 
+[Website](https://jdk.java.net) |
+[Releases](https://jdk.java.net) |
 Docker Images (n/a)
 
 Oracle provides OpenJDK builds for Linux, macOS and windows in a compressed archive format.
@@ -57,8 +57,8 @@ These builds will only be updated for a 6 month period. Updates and security pat
 
 ### Oracle Java SE Development Kit (JDK)
 
-[Website](https://www.oracle.com/java/) | 
-[Releases](https://www.oracle.com/java/technologies/downloads/archive/) | 
+[Website](https://www.oracle.com/java/) |
+[Releases](https://www.oracle.com/java/technologies/downloads/archive/) |
 Docker Images (n/a)
 
 Oracle provides a commercial version of the OpenJDK, which are based on the exactly same sources of the OpenJDK: The Oracle Java SE Development Kit (JDK).
@@ -72,16 +72,16 @@ With version 11 to version 16 builds were published under the [Oracle Technology
 This is why many new distributions of the OpenJDK have emerged.
 
 Version 17 is published under the [Oracle No-Fee Terms and Conditions (NFTC)](https://www.oracle.com/downloads/licenses/no-fee-license.html), which allows the usage of the builds for running _internal business operations_. Unfortunally, it is not defined, what this means. Is a public website running _internal business operations_?
- 
+
 Also, based on this volatile licensing history, it is not predictable, how future version will be licensed.
 
 ⛔️ Recommendation: Do not use _Oracle Java SE Development Kit (JDK)_, unless you know what you are doing.
 
 
-### Adoptium Eclipse Temurin 
+### Adoptium Eclipse Temurin
 
-[Website](https://adoptium.net) | 
-[Releases](https://adoptium.net/archive.html) | 
+[Website](https://adoptium.net) |
+[Releases](https://adoptium.net/archive.html) |
 [Docker Images](https://hub.docker.com/_/eclipse-temurin/)
 
 Eclipse Adoptium is a top-level project under the Eclipse Foundation, which provides resources and a professional governance model for open source software.
@@ -98,8 +98,8 @@ Adoptium states, it will continue to build binaries for LTS releases as long as 
 
 ### AdoptOpenJDK
 
-[Website](https://adoptopenjdk.net) | 
-[Releases](https://adoptopenjdk.net/archive.html?variant=openjdk11&jvmVariant=hotspot) | 
+[Website](https://adoptopenjdk.net) |
+[Releases](https://adoptopenjdk.net/archive.html?variant=openjdk11&jvmVariant=hotspot) |
 [Docker Images](https://hub.docker.com/_/adoptopenjdk)
 
 The AdoptOpenJDK project was the predecessor of Eclipse Adoptium and provided high-quality OpenJDK builds, both for the default HotSpot and the OpenJ9 virtual machine.
@@ -111,15 +111,15 @@ The website and older releases are kept online to access archived releases.
 
 ### Azul Zulu
 
-[Website](https://www.azul.com) | 
-[Releases](https://www.azul.com/downloads/?package=jdk#download-openjdk) | 
+[Website](https://www.azul.com) |
+[Releases](https://www.azul.com/downloads/?package=jdk#download-openjdk) |
 [Docker Images](https://hub.docker.com/r/azul/zulu-openjdk)
 
 Azul Systems, Inc., has specialized in professional Java technologies and commercial support for JDK.
 Azul has a high industry reputation and is engaged in various working groups to evolve the Java platform.
 
 Azul provides open source OpenJDK builds called _Azul Zulu_ for many operating systems and architectures.
-Additionally, Azul provides builds for special requirements, such as stipped down JREs and builds including OpenJFX. 
+Additionally, Azul provides builds for special requirements, such as stipped down JREs and builds including OpenJFX.
 
 A downside of these builds is the dependency to a single company, that may suddenly change its license or update policies.
 
@@ -127,8 +127,8 @@ A downside of these builds is the dependency to a single company, that may sudde
 
 ### BellSoft Liberica JDK
 
-[Website](https://bell-sw.com) | 
-[Releases](https://bell-sw.com/pages/downloads/?) | 
+[Website](https://bell-sw.com) |
+[Releases](https://bell-sw.com/pages/downloads/?) |
 [Docker Images](https://hub.docker.com/u/bellsoft)
 
 Similar to Azul, BellSoft has specialized in professional Java technologies and commercial support for JDK.
@@ -145,8 +145,8 @@ A downside of these builds is the dependency to a single company, that may sudde
 
 ### IBM Semeru Runtime
 
-[Website](https://developer.ibm.com/languages/java/semeru-runtimes/) | 
-[Releases](https://developer.ibm.com/languages/java/semeru-runtimes/downloads/) | 
+[Website](https://developer.ibm.com/languages/java/semeru-runtimes/) |
+[Releases](https://developer.ibm.com/languages/java/semeru-runtimes/downloads/) |
 Docker Images (n/a)
 
 IBM developed its own version of the Java Virtual Machine, called J9 and it was open-sourced as _Eclipse OpenJ9_.
@@ -159,8 +159,8 @@ IBM now provides builds called _Semeru Runtime_ based on the Eclipse OpenJ9 Java
 
 ### Amazon Corretto
 
-[Website](https://aws.amazon.com/de/corretto/) | 
-[Releases](https://aws.amazon.com/de/corretto/) | 
+[Website](https://aws.amazon.com/de/corretto/) |
+[Releases](https://aws.amazon.com/de/corretto/) |
 [Docker Images](https://hub.docker.com/_/amazoncorretto)
 
 Since Oracle changed the support and license policy for its OpenJDK builds, major cloud providers decided to establish their own managed OpenJDK builds and providing long-term updates. Apparantly, this is to avoid risks, especially lawsuits against Oracle.
@@ -176,8 +176,8 @@ Amazon provides releases for major development platforms and an optimized versio
 
 ### Microsoft Build of OpenJDK
 
-[Website](https://www.microsoft.com/openjdk) | 
-[Releases](https://docs.microsoft.com/en-us/java/openjdk/download) | 
+[Website](https://www.microsoft.com/openjdk) |
+[Releases](https://docs.microsoft.com/en-us/java/openjdk/download) |
 [Docker Images](https://docs.microsoft.com/en-us/java/openjdk/containers)
 
 In 2021, Microsoft published _Microsoft Build of OpenJDK_, yet another OpenJDK build.
@@ -190,8 +190,8 @@ Microsoft provides releases for major development platforms.
 
 #### Alibaba Dragonwell
 
-[Website](http://dragonwell-jdk.io) | 
-[Releases](http://dragonwell-jdk.io) | 
+[Website](http://dragonwell-jdk.io) |
+[Releases](http://dragonwell-jdk.io) |
 [Docker Images](https://github.com/alibaba/dragonwell11/wiki/Use-Dragonwell-11-docker-images)
 
 Alibaba provides an OpenJDK build which includes back ports and some _extra features_.
@@ -201,8 +201,8 @@ Alibaba provides an OpenJDK build which includes back ports and some _extra feat
 
 ### SapMachine
 
-[Website](https://sap.github.io/SapMachine/) | 
-[Releases](https://github.com/SAP/SapMachine/releases) | 
+[Website](https://sap.github.io/SapMachine/) |
+[Releases](https://github.com/SAP/SapMachine/releases) |
 [Docker Images](https://hub.docker.com/_/sapmachine)
 
 SapMachine is yet another OpenJDK Build, maintained by SAP.
@@ -212,8 +212,8 @@ SapMachine is yet another OpenJDK Build, maintained by SAP.
 
 ### Red Hat OpenJDK
 
-[Website](https://developers.redhat.com/products/openjdk/overview) | 
-[Releases](https://developers.redhat.com/products/openjdk/download) | 
+[Website](https://developers.redhat.com/products/openjdk/overview) |
+[Releases](https://developers.redhat.com/products/openjdk/download) |
 [Docker Images](https://catalog.redhat.com/software/containers/ubi8/openjdk-11/5dd6a4b45a13461646f677f4)
 
 Red Had provides OpenJDK builds for LTS versions.
@@ -270,8 +270,8 @@ In production you only need a JRE, but it is quite common to use the JDK, too.
 
 ### What about Java EE?
 
-_Java EE (Java Platform, Enterprise Edition)_ was renamed to _Jakarta EE_. 
-It is a specification to build server app and frontends. 
+_Java EE (Java Platform, Enterprise Edition)_ was renamed to _Jakarta EE_.
+It is a specification to build server app and frontends.
 In terms of scope, Jakarta EE can be compared with more modern frameworks like _[Spring Boot](https://spring.io/projects/spring-boot)_ and _[Quarkus](https://quarkus.io)_, but Jakarta EE feels more complicated.
 
 ⚠️ Recommendation: Do not start new projects based on _Jakarta EE_. Use _Spring Boot_ or _Quarkus_.
