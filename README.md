@@ -199,7 +199,6 @@ Alibaba provides an OpenJDK build which includes back ports and some _extra feat
 ⛔️ Recommendation: Do not use _Alibaba Dragonwell_, unless you are forced by your government.
 
 
-
 ### SapMachine
 
 [Website](https://sap.github.io/SapMachine/) | 
@@ -209,6 +208,7 @@ Alibaba provides an OpenJDK build which includes back ports and some _extra feat
 SapMachine is yet another OpenJDK Build, maintained by SAP.
 
 ⚠️ Recommendation: Use _SapMachine_ only if you are running Java applications on SAP servers.
+
 
 ### Red Hat OpenJDK
 
@@ -243,9 +243,21 @@ sdk install java 17.0.0-tem
 Validate by checking the version:
 
 ```
-sdk install java 17.0.0-tem
+java --version
 ```
 
+
+### Which version of Java do I currently have installed?
+
+```
+which java
+`which java` --version
+```
+
+On Linux, you might also try
+```
+sudo update-java-alternatives
+```
 
 ### What is the difference between JDK and JRE?
 
