@@ -11,7 +11,7 @@ This site gives independent, yet opinonated recommendations.
 
 ## TL;DR
 
-✅ Recommendation: Use [Adoptium Eclipse Temurin OpenJDK 17 LTS version](https://adoptium.net/releases.html?variant=openjdk17&jvmVariant=hotspot) and ensure that your local version matches the CI and production version. 
+✅ Recommendation: Use [Adoptium Eclipse Temurin OpenJDK 17 LTS version](#adoptium-eclipse-temurin) and ensure that your local version matches the CI and production version. 
 
 ## Releases
 
