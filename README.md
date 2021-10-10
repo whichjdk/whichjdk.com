@@ -8,6 +8,7 @@ Binary distributions are provided by different vendors for a number of supported
 These distributions differ in licenses, commercial support, supported platforms, and update frequency.
 This site gives independent, yet opinonated recommendations.
 
+
 ## TL;DR
 
 Recommendation: Use [Adoptium Eclipse Temurin OpenJDK 17 LTS version](https://adoptium.net/releases.html?variant=openjdk17&jvmVariant=hotspot) and ensure that your local version matches the CI and production version. 
