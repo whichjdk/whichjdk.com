@@ -119,7 +119,7 @@ Azul Systems, Inc., has specialized in professional Java technologies and commer
 Azul has a high industry reputation and is engaged in various working groups to evolve the Java platform.
 
 Azul provides open source OpenJDK builds called _Azul Zulu_ for many operating systems and architectures.
-Additionally, Azul provides builds for special requirements, such as stipped down JREs and builds including OpenJFX.
+Additionally, Azul provides builds for special requirements, such as stripped down JREs and builds including OpenJFX.
 
 A downside of these builds is the dependency to a single company, that may suddenly change its license or update policies.
 
