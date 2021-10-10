@@ -9,7 +9,7 @@ These distributions differ in licenses, commercial support, supported platforms,
 
 ## TL;DR
 
-Use [Adoptium Eclipse Temurin OpenJDK 17 LTS version](https://adoptium.net/releases.html?variant=openjdk17&jvmVariant=hotspot) and ensure that your local version matches the CI and production version. 
+Recommendation: Use [Adoptium Eclipse Temurin OpenJDK 17 LTS version](https://adoptium.net/releases.html?variant=openjdk17&jvmVariant=hotspot) and ensure that your local version matches the CI and production version. 
 
 ## Releases
 
@@ -50,7 +50,7 @@ Oracle provides OpenJDK builds for Linux, macOS and windows in a compressed arch
 
 These builds will only be updated for a 6 month period. Updates and security patches will not be available after this short period. This also applies for LTS versions! E.g. the latest OpenJDK 11 build was [11.0.2+9](https://jdk.java.net/archive/) while the current OpenJDK version is [11.0.12+7](https://wiki.openjdk.java.net/display/JDKUpdates/JDK11u).
 
-⛔️ Do not use _OpenJDK builds by Oracle_.
+⛔️ Recommendation: Do not use _OpenJDK builds by Oracle_.
 
 
 ### Oracle Java SE Development Kit (JDK)
@@ -73,7 +73,7 @@ Version 17 is published under the [Oracle No-Fee Terms and Conditions (NFTC)](ht
  
 Also, based on this volatile licensing history, it is not predictable, how future version will be licensed.
 
-⛔️ Do not use _Oracle Java SE Development Kit (JDK)_, unless you know what you are doing.
+⛔️ Recommendation: Do not use _Oracle Java SE Development Kit (JDK)_, unless you know what you are doing.
 
 
 ### Adoptium Eclipse Temurin 
@@ -91,7 +91,7 @@ The Eclipse Temurin buids are high-quality, vendor-neutral, and TCK-tested under
 
 Adoptium states, it will continue to build binaries for LTS releases as long as the corresponding upstream source is actively maintained.
 
-✅ Adoptium Eclipse Temurin OpenJDK builds are highly recommended.
+✅ Recommendation: Adoptium Eclipse Temurin OpenJDK builds are highly recommended.
 
 
 ### AdoptOpenJDK
@@ -104,7 +104,7 @@ The AdoptOpenJDK project was the predecessor of Eclipse Adoptium and provided hi
 
 The website and older releases are kept online to access archived releases.
 
-⚠️ Do not use _AdoptOpenJDK_ anymore. Use _Adoptium Eclipse Temurin_ OpenJDK builds instead.
+⚠️ Recommendation: Do not use _AdoptOpenJDK_ anymore. Use _Adoptium Eclipse Temurin_ OpenJDK builds instead.
 
 
 ### Azul Zulu
@@ -121,7 +121,7 @@ Additionally, Azul provides builds for special requirements, such as stipped dow
 
 A downside of these builds is the dependency to a single company, that may suddenly change its license or update policies.
 
-✅ _Azul Zulu Builds of OpenJDK_ are a good choice.
+✅ Recommendation: _Azul Zulu Builds of OpenJDK_ are a good choice.
 
 ### BellSoft Liberica JDK
 
@@ -138,7 +138,7 @@ The popular Spring Boot framework chose Liberica JDK as runtime for their [build
 
 A downside of these builds is the dependency to a single company, that may suddenly change its license or update policies.
 
-✅ _BellSoft Liberica JDK_ builds are a good choice.
+✅ Recommendation: _BellSoft Liberica JDK_ builds are a good choice.
 
 
 ### IBM Semeru Runtime
@@ -152,7 +152,7 @@ It is an alternative to the default HotSpot Java Virtual Machine, but it never g
 
 IBM now provides builds called _Semeru Runtime_ based on the Eclipse OpenJ9 Java Virtual Machine and some OpenJDK class libraries.
 
-⛔️ There is no reason to use _IBM Semeru Runtime_, unless you know what you are doing.
+⛔️ Recommendation: There is no reason to use _IBM Semeru Runtime_, unless you know what you are doing.
 
 
 ### Amazon Corretto
@@ -169,7 +169,7 @@ AWS includes back ports of bug fixes from newer OpenJDK versions and [claims](ht
 
 Amazon provides releases for major development platforms and an optimized version for its own Amazon Linux 2.
 
-⚠️ Use _Corretto_, only if you run Java applications directly on Amazon Linux 2 in AWS.
+⚠️ Recommendation: Use _Corretto_, only if you run Java applications directly on Amazon Linux 2 in AWS.
 
 
 ### Microsoft Build of OpenJDK
@@ -184,7 +184,7 @@ Microsoft may include back ports of bug fixes from newer OpenJDK versions and cl
 
 Microsoft provides releases for major development platforms.
 
-⚠️ Use _Microsoft Build of OpenJDK_, only if you run Java applications directly on Azure.
+⚠️ Recommendation: Use _Microsoft Build of OpenJDK_, only if you run Java applications directly on Azure.
 
 #### Alibaba Dragonwell
 
@@ -194,19 +194,29 @@ Microsoft provides releases for major development platforms.
 
 Alibaba provides an OpenJDK build which includes back ports and some _extra features_.
 
-⛔️ Do not use _Alibaba Dragonwell_, unless you are forced by your government.
+⛔️ Recommendation: Do not use _Alibaba Dragonwell_, unless you are forced by your government.
 
 
 
 ### SapMachine
-TBD
+
+[Website](https://sap.github.io/SapMachine/) | 
+[Releases](https://github.com/SAP/SapMachine/releases) | 
+[Docker Images](https://hub.docker.com/_/sapmachine)
+
+SapMachine is yet another OpenJDK Build, maintained by SAP.
+
+⚠️ Recommendation: Use _SapMachine_ only if you are running Java applications on SAP servers.
 
 ### Red Hat OpenJDK
-TBD
 
+[Website](https://developers.redhat.com/products/openjdk/overview) | 
+[Releases](https://developers.redhat.com/products/openjdk/download) | 
+[Docker Images](https://catalog.redhat.com/software/containers/ubi8/openjdk-11/5dd6a4b45a13461646f677f4)
 
-## GraalVM
-TBD
+Red Had provides OpenJDK builds for LTS versions.
+
+⚠️ Recommendation: Use _Red Hat OpenJDK_ only if you are running Java applications directly on Red Hat Enterprise Linux.
 
 
 
@@ -215,12 +225,42 @@ TBD
 
 ### What is the best way to install a JDK for local development?
 
+Use [SDKMAN!](https://sdkman.io/install).
+
+To list available JDKs, type
+```
+sdk list java
+```
+
+and install a specific version:
+
+```
+sdk install java 17.0.0-tem
+```
+
+Validate by checking the version:
+
+```
+sdk install java 17.0.0-tem
+```
+
+
 ### What is the difference between JDK and JRE?
+
+Some distributions provide a JDK and a JRE build.
+A JDK includes everything to _compile, package and run_ Java applications, while a JRE only includes the binaries and libraries to _run_ Java applications.
+The JRE is a stripped down version of the JRE, and is smaller in terms of Megabytes.
+
+For local development, you'll need a JDK.
+In production you only need a JRE, but it is OK to use the JDK, too.
 
 ### What about Java EE?
 
-### What should I install for a Java desktop application?
+_Java EE (Java Platform, Enterprise Edition)_ was renamed to _Jakarta EE_. 
+It is a specification to build server app and frontends. 
+In terms of scope, Jakarta EE can be compared with more modern frameworks like _[Spring Boot](https://spring.io/projects/spring-boot)_ and _[Quarkus](https://quarkus.io)_, but Jakarta EE feels more complicated.
 
+⚠️ Recommendation: Do not start new projects based on _Jakarta EE_. Use _Spring Boot_ or _Quarkus_.
 
 
 ## About
