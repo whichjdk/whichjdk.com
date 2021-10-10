@@ -263,10 +263,10 @@ sudo update-java-alternatives
 
 Some distributions provide a JDK and a JRE build.
 A JDK includes everything to _compile, package and run_ Java applications, while a JRE only includes the binaries and libraries to _run_ Java applications.
-The JRE is a stripped down version of the JRE, and is smaller in terms of Megabytes.
+The JRE is a stripped down version of the JDK, and is smaller in terms of Megabytes.
 
-For local development, you'll need a JDK.
-In production you only need a JRE, but it is OK to use the JDK, too.
+For local development, you need a JDK.
+In production you only need a JRE, but it is quite common to use the JDK, too.
 
 ### What about Java EE?
 
