@@ -3,15 +3,15 @@
 To build and run Java applications, a Java Compiler, Java Runtime Libraries, and a Virtual Machine are required that implement the Java Platform, Standard Edition ("Java SE") specification.
 
 The [OpenJDK](https://openjdk.java.net) is the open source reference implementation of the Java SE Specification, but it is only the source code.
-Binary distributions are provided by different vendors for a number of supported platforms.
-
+Binary distributions are provided by different vendors for a number of supported platforms. 
 These distributions differ in licenses, commercial support, supported platforms, and update frequency.
+
 This site gives independent, yet opinonated recommendations.
 
 
 ## TL;DR
 
-Recommendation: Use [Adoptium Eclipse Temurin OpenJDK 17 LTS version](https://adoptium.net/releases.html?variant=openjdk17&jvmVariant=hotspot) and ensure that your local version matches the CI and production version. 
+✅ Recommendation: Use [Adoptium Eclipse Temurin OpenJDK 17 LTS version](https://adoptium.net/releases.html?variant=openjdk17&jvmVariant=hotspot) and ensure that your local version matches the CI and production version. 
 
 ## Releases
 
