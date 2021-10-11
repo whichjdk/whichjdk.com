@@ -242,7 +242,7 @@ Red Had provides OpenJDK builds for LTS versions.
 [Releases](https://github.com/graalvm/graalvm-ce-builds/releases) |
 [Docker Images](https://github.com/graalvm/container/pkgs/container/graalvm-ce)
 
-GraalVM is a fully compliant JDK, but much different than all the others builds.
+GraalVM is a fully compliant JDK, but much different from all the others builds.
 
 GraalVM was developed by Oracle. 
 It is based on the OpenJDK but includes a new high-performance compiler and a new polyglot virtual machine (can execute code written in different programming languages).
