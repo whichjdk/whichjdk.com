@@ -52,7 +52,7 @@ Oracle provides OpenJDK builds for Linux, macOS and windows in a compressed arch
 
 These builds will only be updated for a 6 month period. Updates and security patches will not be available after this short period. This also applies for LTS versions! E.g. the latest OpenJDK 11 build was [11.0.2+9](https://jdk.java.net/archive/) while the current OpenJDK version is [11.0.12+7](https://wiki.openjdk.java.net/display/JDKUpdates/JDK11u).
 
-⛔️ Recommendation: Do not use _OpenJDK builds by Oracle_.
+⛔️ Recommendation: Do not use _OpenJDK builds by Oracle_, particularly if you plan to stick with LTS versions.
 
 
 ### Oracle Java SE Development Kit (JDK)
@@ -154,7 +154,7 @@ It is an alternative to the default HotSpot Java Virtual Machine, but it has nev
 
 IBM now provides builds called _Semeru Runtime_ based on the Eclipse OpenJ9 Java Virtual Machine and some OpenJDK class libraries.
 
-⛔️ Recommendation: There is no reason to use _IBM Semeru Runtime_, unless you know what you are doing.
+⛔️ Recommendation: There is no reason to use _IBM Semeru Runtime_, unless you know that you need the OpenJ9 Virtual Machine.
 
 
 ### Amazon Corretto
