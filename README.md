@@ -302,7 +302,7 @@ In production you only need a runtime environment, but it is quite common to use
 
 _Java EE (Java Platform, Enterprise Edition)_ was renamed to _Jakarta EE_.
 It is a specification to build server app and frontends.
-In terms of scope, Jakarta EE can be compared with more modern frameworks like _[Spring Boot](https://spring.io/projects/spring-boot)_, [Micronaut](https://micronaut.io), and _[Quarkus](https://quarkus.io)_, but Jakarta EE feels more complicated.
+In terms of scope, Jakarta EE can be compared with more modern frameworks like [Spring Boot](https://spring.io/projects/spring-boot), [Micronaut](https://micronaut.io), and [Quarkus](https://quarkus.io), but Jakarta EE feels more complicated.
 
 ⚠️ Recommendation: Do not start new projects based on _Jakarta EE_. Most people use _Spring Boot_, which is a good choice. Consider _Quarkus_, if you have a strong Java EE background. Consider _Micronaut_, if you like Groovy and Grails.
 
