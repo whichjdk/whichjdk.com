@@ -89,7 +89,7 @@ The Adoptium Working Group consists of major companies and organizations that ha
 
 The Adoptium OpenJDK builds are called _Eclipse Temurin_ to distinguish to project and the builds.
 
-The Eclipse Temurin buids are high-quality, vendor-neutral, and TCK-tested under a permissive license.
+The Eclipse Temurin builds are high-quality, vendor-neutral, and TCK-tested under a permissive license.
 
 Adoptium states, it will continue to build binaries for LTS releases as long as the corresponding upstream source is actively maintained.
 
