@@ -221,13 +221,26 @@ Red Had provides OpenJDK builds for LTS versions.
 ⚠️ Recommendation: Use _Red Hat OpenJDK_ only if you are running Java applications directly on Red Hat Enterprise Linux.
 
 
+### GraalVM
+
+[Website](https://www.graalvm.org) |
+[Releases](https://github.com/graalvm/graalvm-ce-builds/releases) |
+[Docker Images](https://github.com/graalvm/container/pkgs/container/graalvm-ce)
+
+GraalVM is a fully compliant JDK, but much different than all the others builds.
+
+GraalVM was developed by Oracle. 
+It is based on the OpenJDK but includes a new high-performance compiler and a new polyglot virtual machine (can execute code written in different programming languages).
+It is also possible to create platform-specific native executable that are highly optimized and start extremly fast fast.
+
+🤷 Please [share](https://github.com/whichjdk/whichjdk.com/issues/6) your experiences with GraalVM in production, so that we can elaborate a validated recommendation.
 
 
 ## FAQs
 
 ### What is the best way to install a JDK for local development?
 
-Use [SDKMAN!](https://sdkman.io/install).
+Use [SDKMAN!](https://sdkman.io/install)
 
 To list available JDKs, type
 ```
