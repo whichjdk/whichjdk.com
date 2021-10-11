@@ -167,11 +167,11 @@ Since Oracle changed the support and license policy for its OpenJDK builds, majo
 
 In 2018, AWS published _Corretto_, yet another OpenJDK build.
 
-AWS includes back ports of bug fixes from newer OpenJDK versions and [claims](https://aws.amazon.com/corretto/faqs/) that they would add patches that might not yet be integrated in the OpenJDK project.
+AWS includes back ports of bug fixes from newer OpenJDK versions and [claims](https://aws.amazon.com/corretto/faqs/) that they would add patches that might not yet be integrated in the OpenJDK project. Amazon has implemented an alternative [crypto provider](https://github.com/corretto/amazon-corretto-crypto-provider) that has been optimized for their services. It is [planned](https://aws.amazon.com/blogs/opensource/introducing-amazon-corretto-crypto-provider-accp/) to be used as the default crypto implementation in Corretto.
 
 Amazon provides releases for major development platforms and an optimized version for its own Amazon Linux 2.
 
-⚠️ Recommendation: Use _Corretto_, only if you run Java applications directly on Amazon Linux 2 in AWS.
+✅ Recommendation: _Corretto_ builds are a good choice, particularly if you run Java applications directly on Amazon Linux 2 in AWS.
 
 
 ### Microsoft Build of OpenJDK
