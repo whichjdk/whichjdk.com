@@ -21,7 +21,7 @@ Every three years, the September release will be a Long-Term-Support (LTS) relea
 
 JDK Version	| Type    | Release Date | Highlights           | Recommendation
 ----------- | ------- | ------------ | ---------------------| ---
-**8**       | **LTS** | **03/2014**  | Lambdas              |  Last LTS version under previous release model. Free updates by Oracle ended, but still maintained by others. Upgrade to a 11 or 17 within the next months!
+**8**       | **LTS** | **03/2014**  | Lambdas              |  Last LTS version under previous release model. Free updates by Oracle [ended](https://www.oracle.com/java/technologies/java-se-support-roadmap.html), but still maintained by others. Upgrade to a 11 or 17 within the next months!
 9           | Feature | 09/2017	     | Modules              | New release model was introduced. EOL. Upgrade to 11 or 17 now!
 10          | Feature | 03/2018	     | var                  | EOL. Upgrade to 11 or 17 now!
 **11**      | **LTS** | **09/2018**	 | New HTTP Client      | Widely used LTS version. Plan upgrade to version 17 within the next months.
