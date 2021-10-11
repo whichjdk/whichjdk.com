@@ -261,12 +261,14 @@ sudo update-java-alternatives
 
 ### What is the difference between JDK and JRE?
 
-Some distributions provide a JDK and a JRE build.
+Some distributions provide a JDK (Java Development Kit) and a JRE (Java Runtime Environment) build.
 A JDK includes everything to _compile, package and run_ Java applications, while a JRE only includes the binaries and libraries to _run_ Java applications.
-The JRE is a stripped down version of the JDK, and is smaller in terms of Megabytes.
+The JRE is a stripped down version of the JDK, and is smaller in terms of megabytes.
+
+If size matters for you, consider creating your own stripped down runtime using [jlink](https://blog.adoptium.net/2021/10/jlink-to-produce-own-runtime/).
 
 For local development, you need a JDK.
-In production you only need a JRE, but it is quite common to use the JDK, too.
+In production you only need a runtime environment, but it is quite common to use the JDK, too.
 
 ### What about Java EE?
 
