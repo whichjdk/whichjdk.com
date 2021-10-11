@@ -42,6 +42,21 @@ You need to choose a distribution.
 
 ## Distributions
 
+- [OpenJDK builds by Oracle (jdk.java.net)](#openjdk-builds-by-oracle-jdkjavanet)
+- [Oracle Java SE Development Kit (JDK)](#oracle-java-se-development-kit-jdk)
+- [Adoptium Eclipse Temurin](#adoptium-eclipse-temurin)
+- [AdoptOpenJDK](#adoptopenjdk)
+- [Azul Zulu](#azul-zulu)
+- [BellSoft Liberica JDK](#bellsoft-liberica-jdk)
+- [IBM Semeru Runtime](#ibm-semeru-runtime)
+- [Amazon Corretto](#amazon-corretto)
+- [Microsoft Build of OpenJDK](#microsoft-build-of-openjdk)
+- [Alibaba Dragonwell](#alibaba-dragonwell)
+- [SapMachine](#sapmachine)
+- [Red Hat OpenJDK](#red-hat-openjdk)
+- [GraalVM](#graalvm)
+
+
 ### OpenJDK builds by Oracle (jdk.java.net)
 
 [Website](https://jdk.java.net) |
