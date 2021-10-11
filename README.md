@@ -102,9 +102,9 @@ Also, based on this volatile licensing history, it is not predictable, how futur
 Eclipse Adoptium is a top-level project under the Eclipse Foundation, which provides resources and a professional governance model for open source software.
 The Adoptium Working Group consists of major companies and organizations that have a strategic interest in the Java technology, including Red Hat, IBM, Microsoft, Azul, and the iJUG. The former AdoptOpenJDK project has moved to Eclipse Adoptium.
 
-The Adoptium OpenJDK builds are called _Eclipse Temurin_ to distinguish to project and the builds.
+The Adoptium OpenJDK builds are called _Eclipse Temurin_ to distinguish the project from the builds. 
 
-The Eclipse Temurin builds are high-quality, vendor-neutral, and TCK-tested under a permissive license.
+Eclipse Temurin builds are high-quality, vendor-neutral, and TCK-tested under a permissive license.
 
 Adoptium states, it will continue to build binaries for LTS releases as long as the corresponding upstream source is actively maintained.
 
