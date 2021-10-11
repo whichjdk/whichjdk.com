@@ -188,7 +188,7 @@ Microsoft provides releases for major development platforms.
 
 ⚠️ Recommendation: Use _Microsoft Build of OpenJDK_, only if you run Java applications directly on Azure.
 
-#### Alibaba Dragonwell
+### Alibaba Dragonwell
 
 [Website](http://dragonwell-jdk.io) |
 [Releases](http://dragonwell-jdk.io) |
