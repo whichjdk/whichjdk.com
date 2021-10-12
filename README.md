@@ -169,7 +169,9 @@ It is an alternative to the default HotSpot Java Virtual Machine, but it has nev
 
 IBM now provides builds called _Semeru Runtime_ based on the Eclipse OpenJ9 Java Virtual Machine and some OpenJDK class libraries.
 
-⛔️ Recommendation: There is no reason to use _IBM Semeru Runtime_, unless you know that you need the OpenJ9 Virtual Machine.
+[Low memory footprint and start fast with shared classes](https://www.eclipse.org/openj9/performance/), but lower throughput compared to Hotspot Virtual Machine.
+
+⛔️ Recommendation: There is no reason to use _IBM Semeru Runtime_, unless you know that you need the OpenJ9 Virtual Machine. Because it has a low memory footprint but may cause compatibility issues.
 
 
 ### Amazon Corretto
@@ -246,7 +248,7 @@ GraalVM is a fully compliant JDK, but much different from all the others builds.
 
 GraalVM was developed by Oracle. 
 It is based on the OpenJDK but includes a new high-performance compiler and a new polyglot virtual machine (can execute code written in different programming languages).
-It is also possible to create platform-specific native executable that are highly optimized and start extremly fast fast.
+It is also possible to create platform-specific native executable that are highly optimized and start extremly fast.
 
 🤷 Please [share](https://github.com/whichjdk/whichjdk.com/issues/6) your experiences with GraalVM in production, so that we can elaborate a validated recommendation.
 
