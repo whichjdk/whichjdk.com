@@ -168,10 +168,9 @@ IBM developed its own version of the Java Virtual Machine, called J9 and it was 
 It is an alternative to the default HotSpot Java Virtual Machine, but it has never gained much popularity.
 
 IBM now provides builds called _Semeru Runtime_ based on the Eclipse OpenJ9 Java Virtual Machine and some OpenJDK class libraries.
+OpenJ9 has a [low memory footprint and starts fast with shared classes](https://www.eclipse.org/openj9/performance/), but lower throughput compared to Hotspot Virtual Machine.
 
-[Low memory footprint and start fast with shared classes](https://www.eclipse.org/openj9/performance/), but lower throughput compared to Hotspot Virtual Machine.
-
-⛔️ Recommendation: There is no reason to use _IBM Semeru Runtime_, unless you know that you need the OpenJ9 Virtual Machine. Because it has a low memory footprint but may cause compatibility issues.
+⛔️ Recommendation: Use _IBM Semeru Runtime_ only, if you know that you need the OpenJ9 Virtual Machine.
 
 
 ### Amazon Corretto
