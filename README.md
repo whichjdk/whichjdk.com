@@ -36,7 +36,7 @@ You have to decide, if you want to stick with the latest LTS version, or if you 
 Both ways are OK.
 If uncertain, stick with the latest LTS version.
 
-The OpenJDK project itself is mangaged on [openjdk.java.net](https://openjdk.java.net), where you can find specifications, source code, and mailing lists.
+The OpenJDK project itself is managed on [openjdk.java.net](https://openjdk.java.net), where you can find specifications, source code, and mailing lists.
 But there are no builds that you can download.
 You need to choose a distribution.
 
