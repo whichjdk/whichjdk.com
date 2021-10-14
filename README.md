@@ -47,6 +47,7 @@ You need to choose a distribution.
 - [Adoptium Eclipse Temurin](#adoptium-eclipse-temurin)
 - [AdoptOpenJDK](#adoptopenjdk)
 - [Azul Zulu](#azul-zulu)
+- [Azul Zing](#azul-zing)
 - [BellSoft Liberica JDK](#bellsoft-liberica-jdk)
 - [IBM Semeru Runtime](#ibm-semeru-runtime)
 - [Amazon Corretto](#amazon-corretto)
