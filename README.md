@@ -140,6 +140,24 @@ A downside of these builds is the dependency to a single company, that may sudde
 
 ✅ Recommendation: _Azul Zulu Builds of OpenJDK_ are a good choice.
 
+
+### Azul Zing
+
+[Website](https://www.azul.com) |
+[Releases](https://www.azul.com/products/prime/stream-download/) |
+Docker Images (n/a)
+
+Azul Systems has a second JDK, called _Azul Platform Prime_, or better known as _Zing_. 
+It requires a commercial contract with Azul for production use.
+
+Zing is OpenJDK-based, but adds their patented "C4 Pauseless Garbage Collector", the "Falcon JIT Compiler" (that optimizes for throughput at the expense of higher CPU usage and longer start-up and warm-up times), and some features to speed up compiler warm-up time (to mitigate the Falcon JIT Compiler's slower warm-up times the by profiling and storing optimizations of training runs in files).
+
+Azul Zing has some use cases in financial trading applications, where GC pauses are a problem.
+On the other handside, the OpenJDK contains the low pause time GCs [Shenandoah](https://wiki.openjdk.java.net/display/shenandoah/Main) and [ZGC](https://wiki.openjdk.java.net/display/zgc) that may be an alternative.
+
+⚠️ Recommendation: Do not use _Azul Platform Prime (Zing)_, without a contract with Azul.
+
+
 ### BellSoft Liberica JDK
 
 [Website](https://bell-sw.com) |
