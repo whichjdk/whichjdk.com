@@ -154,9 +154,9 @@ It requires a commercial contract with Azul Systems for production use.
 Zing is OpenJDK-based, and adds the patented "C4 Pauseless Garbage Collector", the "Falcon JIT Compiler" (that optimizes for throughput at the cost of higher CPU usage and longer start-up and warm-up times), and some features to speed up compiler warm-up time (to mitigate the Falcon JIT Compiler's slower warm-up times by profiling and storing optimizations of training runs in files).
 
 Azul Zing has some use cases in financial trading applications, where GC pauses are a problem.
-On the other handside, the OpenJDK contains the low pause time GCs [Shenandoah](https://wiki.openjdk.java.net/display/shenandoah/Main) and [ZGC](https://wiki.openjdk.java.net/display/zgc) that may be an alternative.
+Apart from that, the OpenJDK contains the low pause time GCs [Shenandoah](https://wiki.openjdk.java.net/display/shenandoah/Main) and [ZGC](https://wiki.openjdk.java.net/display/zgc) that may be an alternative.
 
-⚠️ Recommendation: Do not use _Azul Zing / Azul Platform Prime_ without a license.
+⚠️ Recommendation: Consider _Azul Zing / Azul Platform Prime_ when GC pause times are a problem. Do not use it in production without a license.
 
 
 ### BellSoft Liberica JDK
