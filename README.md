@@ -91,7 +91,7 @@ Version 17 is published under the [Oracle No-Fee Terms and Conditions (NFTC)](ht
 
 Also, based on this volatile licensing history, it is not predictable, how future version will be licensed.
 
-⛔️ Recommendation: Do not use _Oracle Java SE Development Kit (JDK)_, unless you know what you are doing.
+⛔️ Recommendation: Do not use _Oracle Java SE Development Kit (JDK)_ before consulting your lawyer.
 
 
 ### Adoptium Eclipse Temurin
@@ -109,7 +109,7 @@ Eclipse Temurin builds are high-quality, vendor-neutral, and TCK-tested under a 
 
 Adoptium states, it will continue to build binaries for LTS releases as long as the corresponding upstream source is actively maintained.
 
-✅ Recommendation: Adoptium Eclipse Temurin OpenJDK builds are highly recommended.
+✅ Recommendation: _Adoptium Eclipse Temurin_ OpenJDK builds are highly recommended.
 
 
 ### AdoptOpenJDK
@@ -122,7 +122,7 @@ The AdoptOpenJDK project was the predecessor of Eclipse Adoptium and provided hi
 
 The website and older releases are kept online to access archived releases.
 
-⛔️ Recommendation: Do not use _AdoptOpenJDK_ anymore. Use _Adoptium Eclipse Temurin_ OpenJDK builds instead.
+⛔️ Recommendation: Do not use _AdoptOpenJDK_ anymore. Use _Adoptium Eclipse Temurin_ instead.
 
 
 ### Azul Zulu
