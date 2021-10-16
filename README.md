@@ -1,5 +1,7 @@
 # Which Version of JDK Should I Use?
 
+<img src="logo.png" alt="Duke is thinking, which version of JDK to use" width="600" />
+
 To build and run Java applications, a Java Compiler, Java Runtime Libraries, and a Virtual Machine are required that implement the Java Platform, Standard Edition ("Java SE") specification.
 
 The [OpenJDK](https://openjdk.java.net) is the open source reference implementation of the Java SE Specification, but it is only the source code.
