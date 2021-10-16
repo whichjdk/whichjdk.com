@@ -1,6 +1,6 @@
-# Which Version of JDK Should I Use?
-
 <img src="logo.png" alt="Duke is thinking, which version of JDK to use" width="600" />
+
+# Which Version of JDK Should I Use?
 
 To build and run Java applications, a Java Compiler, Java Runtime Libraries, and a Virtual Machine are required that implement the Java Platform, Standard Edition ("Java SE") specification.
 
