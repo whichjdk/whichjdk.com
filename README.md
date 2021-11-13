@@ -287,7 +287,7 @@ sdk list java
 and install a specific version:
 
 ```
-sdk install java 17.0.0-tem
+sdk install java 17.0.1-tem
 ```
 
 Validate by checking the version:
