@@ -253,7 +253,7 @@ SapMachine is yet another OpenJDK Build, maintained by SAP.
 [Releases](https://developers.redhat.com/products/openjdk/download) |
 [Docker Images](https://catalog.redhat.com/software/containers/ubi8/openjdk-11/5dd6a4b45a13461646f677f4)
 
-Red Had provides OpenJDK builds for LTS versions.
+Red Hat provides OpenJDK builds for LTS versions.
 
 ⚠️ Recommendation: Use _Red Hat OpenJDK_ only if you are running Java applications directly on Red Hat Enterprise Linux.
 
