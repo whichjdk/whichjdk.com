@@ -272,6 +272,18 @@ It is also possible to create platform-specific native executable that are highl
 
 🤷 Please [share](https://github.com/whichjdk/whichjdk.com/issues/6) your experiences with GraalVM in production, so that we can elaborate a validated recommendation.
 
+## Special Cases
+
+### Apple Silicon
+
+The official support for _macOS/AArch64_ was implemented with [JEP 391](https://openjdk.java.net/jeps/391) in the OpenJDK 17 release.
+
+macOS _x64_ builds run stable with Rosetta 2, but there is a significant performance hit due to the emulation.
+People that develop on an _Apple Silicon_ Mac (like me) should install a native macOS _AArch64_ (aka _ARM 64_) build of the JDK.
+
+Most distributions have _macOS/AArch64_ builds for Java 17+, only.
+[BellSoft Liberica](https://bell-sw.com/announcements/2021/03/12/Liberica-on-Apple-Silicon/) and [Azul Zulu](https://www.azul.com/newsroom/azul-announces-support-of-java-builds-of-openjdk-for-apple-silicon/) also provide free _macOS/AArch64_ builds for Java 8 and Java 11.
+
 
 ## FAQs
 
