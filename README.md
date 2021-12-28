@@ -278,7 +278,7 @@ It is also possible to create platform-specific native executable that are highl
 
 The official support for _macOS/AArch64_ was implemented with [JEP 391](https://openjdk.java.net/jeps/391) in the OpenJDK 17 release.
 
-macOS _x64_ builds run stable with Rosetta 2, but there is a significant performance hit due to the emulation.
+macOS _x64_ builds run stable with Rosetta 2, but there is a significant performance drop due to emulation.
 People that develop on an _Apple Silicon_ Mac (like me) should install a native macOS _AArch64_ (aka _ARM 64_) build of the JDK.
 
 Most distributions have _macOS/AArch64_ builds for Java 17+, only.
