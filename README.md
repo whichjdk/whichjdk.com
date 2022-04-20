@@ -13,7 +13,8 @@ This site gives independent, yet opinionated recommendations.
 
 ## TL;DR
 
-✅ Recommendation: Use [Adoptium Eclipse Temurin 17](#adoptium-eclipse-temurin) and ensure that your local version matches the CI and production version.
+✅ Recommendation: Use [Adoptium Eclipse Temurin 17](#adoptium-eclipse-temurin) and ensure that your local version matches the CI and production version.  
+Make sure, you have the latest patch level 17.0.3 or later, due to [CVE-2022-21449](https://neilmadden.blog/2022/04/19/psychic-signatures-in-java/).
 
 ## Releases
 
@@ -33,7 +34,7 @@ Every three years, the September release will be a Long-Term-Support (LTS) relea
 | [14](https://openjdk.java.net/projects/jdk/14/)     | Feature | 03/2020	     | Switch expressions | EOL. Upgrade to 17 now!                                                                                                                                                                                                             |
 | [15](https://openjdk.java.net/projects/jdk/15/)     | Feature | 09/2020	     | Text blocks        | EOL. Upgrade to 17 now!                                                                                                                                                                                                             |
 | [16](https://openjdk.java.net/projects/jdk/16/)     | Feature | 03/2021	     | Records            | EOL. Upgrade to 17 now!                                                                                                                                                                                                             |
-| [**17**](https://openjdk.java.net/projects/jdk/17/) | **LTS** | **09/2021**	 | Sealed Classes     | Current LTS version.                                                                                                                                                                                                                |
+| [**17**](https://openjdk.java.net/projects/jdk/17/) | **LTS** | **09/2021**	 | Sealed Classes     | Current LTS version. [Update to 17.0.3+ now!](https://neilmadden.blog/2022/04/19/psychic-signatures-in-java/)                                                                                                                                                                                                               |
 | [18](https://openjdk.java.net/projects/jdk/18/)     | Feature | 03/2022	     | [UTF-8 by Default](https://openjdk.java.net/jeps/400)   | Stick to 17!<br>It is a short term release without  significant features. You might want to check if you run in any issues with "UTF-8 by Default" by setting `-Dfile.encoding=UTF-8` in your current JDK.                                                                                                                                                            |
 
 You have to decide, if you want to stick with the latest LTS version, or if you go with the latest feature release and upgrade every six months.
