@@ -71,7 +71,10 @@ Docker Images (n/a)
 
 Oracle provides OpenJDK builds for Linux, macOS and windows in a compressed archive format.
 
-These builds will only be updated for a 6 month period. Updates and security patches will not be available after this short period. This also applies for LTS versions! E.g. the latest OpenJDK 11 build was [11.0.2+9](https://jdk.java.net/archive/) while the current OpenJDK version is [11.0.12+7](https://wiki.openjdk.java.net/display/JDKUpdates/JDK11u).
+These builds will only be updated for a 6-month period. 
+Updates and security patches will not be available after this short period. 
+This also applies for LTS versions! 
+E.g., the latest OpenJDK 11 build was [11.0.2+9](https://jdk.java.net/archive/) while the current OpenJDK version is [11.0.12+7](https://wiki.openjdk.java.net/display/JDKUpdates/JDK11u).
 
 ⛔️ Recommendation: Do not use _OpenJDK builds by Oracle_, particularly if you plan to stick with LTS versions.
 
@@ -137,7 +140,7 @@ The website and older releases are kept online to access archived releases.
 [Docker Images](https://hub.docker.com/r/azul/zulu-openjdk)
 
 Azul Systems, Inc., has specialized in professional Java technologies and commercial support for JDK.
-Azul has a high industry reputation and is engaged in various working groups to evolve the Java platform.
+Azul has a high-industry reputation and is engaged in various working groups to evolve the Java platform.
 
 Azul provides open source OpenJDK builds called _Azul Zulu_ for many operating systems and architectures.
 Additionally, Azul provides builds for special requirements, such as stripped down JREs and builds including OpenJFX.
@@ -159,7 +162,7 @@ It requires a commercial contract with Azul Systems for production use.
 Zing is OpenJDK-based, and adds the patented "C4 Pauseless Garbage Collector", the "Falcon JIT Compiler" (that optimizes for throughput at the cost of higher CPU usage and longer start-up and warm-up times), and some features to speed up compiler warm-up time (to mitigate the Falcon JIT Compiler's slower warm-up times by profiling and storing optimizations of training runs in files).
 
 Azul Zing has some use cases in financial trading applications, where GC pauses are a problem.
-Apart from that, the regular OpenJDK contains the free low pause time GCs [Shenandoah](https://wiki.openjdk.java.net/display/shenandoah/Main) and [ZGC](https://wiki.openjdk.java.net/display/zgc) that may be an alternative.
+Apart from that, the regular OpenJDK contains the free low-pause time GCs [Shenandoah](https://wiki.openjdk.java.net/display/shenandoah/Main) and [ZGC](https://wiki.openjdk.java.net/display/zgc) that may be an alternative.
 
 ⚠️ Recommendation: Consider _Azul Zing / Azul Platform Prime_ when GC pause times are a problem. Do not use it in production without a license.
 
@@ -261,6 +264,20 @@ Red Hat provides OpenJDK builds for LTS versions.
 ⚠️ Recommendation: Use _Red Hat OpenJDK_ only if you are running Java applications directly on Red Hat Enterprise Linux.
 
 
+### ojdkbuild
+
+[Website](https://github.com/ojdkbuild/ojdkbuild) |
+[Releases](https://github.com/ojdkbuild/ojdkbuild/releases  ) |
+Docker Images (n/a)
+
+The project is discontinued.
+The ojdkbuild project had the goal of providing Windows x86_64 binaries of OpenJDK that are as close in behaviour to Linux OpenJDK packages as possible, e.g. by using system libraries instead of packaged versions of zlib or OpenSSL.
+It used the packages included in CentOS.
+A use case for these builds was to develop Java software on Windows machines and deploy them to Linux servers in production.
+
+⛔️ Recommendation: Do not use _ojdkbuild_, as the project is discontinued.
+
+
 ### GraalVM
 
 [Website](https://www.graalvm.org) |
@@ -330,7 +347,7 @@ Some distributions provide a JDK (Java Development Kit) and a JRE (Java Runtime 
 A JDK includes everything to _compile, package and run_ Java applications, while a JRE only includes the binaries and libraries to _run_ Java applications.
 The JRE is a stripped down version of the JDK, and is smaller in terms of megabytes.
 
-If size matters for you, consider creating your own stripped down runtime using [jlink](https://blog.adoptium.net/2021/10/jlink-to-produce-own-runtime/).
+If size matters for you, consider creating your own stripped-down runtime using [jlink](https://blog.adoptium.net/2021/10/jlink-to-produce-own-runtime/).
 
 For local development, you need a JDK.
 In production you only need a runtime environment, but it is quite common to use the JDK, too.
