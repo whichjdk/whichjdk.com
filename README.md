@@ -38,12 +38,10 @@ Every three years, the September release will be a Long-Term-Support (LTS) relea
 | [18](https://openjdk.java.net/projects/jdk/18/)     | Feature | 03/2022	     | [UTF-8 by Default](https://openjdk.java.net/jeps/400)   | Stick to 17!<br>It is a short term release without  significant features. You might want to check if you run in any issues with "UTF-8 by Default" by setting `-Dfile.encoding=UTF-8` in your current JDK.                                                                                                                                                            |
 | [19](https://openjdk.java.net/projects/jdk/19/)     | Feature | 09/2022	     | Preview and incubator features, only                   | Stick to 17!<br>If you upgraded to 18 before, upgrade now to 19.                                                                                                                                                            |
 
-You have to decide, if you want to stick with the latest LTS version, or if you go with the latest feature release and upgrade every six months.
-Both ways are OK.
-If uncertain, stick with the latest LTS version.
+You have to decide if you want to stick with the latest LTS version, or if you go with the latest feature release and upgrade every six months.
+Both options are okay, but if you're uncertain, stick with the latest LTS version.
 
-The OpenJDK project itself is managed on [openjdk.java.net](https://openjdk.java.net), where you can find specifications, source code, and mailing lists.
-But there are no builds that you can download.
+The OpenJDK project itself is managed on [openjdk.java.net](https://openjdk.java.net) where you can find specifications, source code, and mailing lists, but there are no builds that you can download.
 You need to choose a distribution.
 
 ## Distributions
@@ -75,7 +73,7 @@ Oracle provides OpenJDK builds for Linux, macOS and windows in a compressed arch
 These builds will only be updated for a 6-month period. 
 Updates and security patches will not be available after this short period. 
 This also applies for LTS versions! 
-E.g., the latest OpenJDK 11 build was [11.0.2+9](https://jdk.java.net/archive/) while the current OpenJDK version is [11.0.12+7](https://wiki.openjdk.java.net/display/JDKUpdates/JDK11u).
+e.g., the latest OpenJDK 11 build was [11.0.2+9](https://jdk.java.net/archive/) while the current OpenJDK version is [11.0.12+7](https://wiki.openjdk.java.net/display/JDKUpdates/JDK11u).
 
 ⛔️ Recommendation: Do not use _OpenJDK builds by Oracle_, particularly if you plan to stick with LTS versions.
 
@@ -91,12 +89,12 @@ Oracle provides updates regular updates and security patches for these builds.
 
 The main issue with these builds is Oracle's licensing policy:
 
-Until version 10 builds were published under the [Oracle Binary Code License Agreement](https://www.oracle.com/de/downloads/licenses/binary-code-license.html), which effectivly allowed the builds to be used for commercial projects.
+Until version 10, builds were published under the [Oracle Binary Code License Agreement](https://www.oracle.com/de/downloads/licenses/binary-code-license.html), which effectivly allowed the builds to be used for commercial projects.
 
 With version 11 to version 16 builds were published under the [Oracle Technology Network License Agreement for Oracle Java SE](https://www.oracle.com/downloads/licenses/javase-license1.html), **which require a fee-based license for usage in production**.
 This is why many new distributions of the OpenJDK have emerged.
 
-Version 17 is published under the [Oracle No-Fee Terms and Conditions (NFTC)](https://www.oracle.com/downloads/licenses/no-fee-license.html), which allows the usage of the builds for running _internal business operations_. Unfortunally, it is not defined, what this means. Is a public website running _internal business operations_?
+Version 17 is published under the [Oracle No-Fee Terms and Conditions (NFTC)](https://www.oracle.com/downloads/licenses/no-fee-license.html), which allows the usage of the builds for running _internal business operations_. Unfortunately, the phrase "internal business operations," is not defined and is a very vague phrase (e.g. is a public-facing website running internal business operations?).
 
 Also, based on this volatile licensing history, it is not predictable, how future version will be licensed.
 
@@ -198,7 +196,7 @@ It is an alternative to the default HotSpot Java Virtual Machine, but it has nev
 IBM now provides builds called _Semeru Runtime_ based on the Eclipse OpenJ9 Java Virtual Machine and some OpenJDK class libraries.
 OpenJ9 has a [low memory footprint and starts fast with shared classes](https://www.eclipse.org/openj9/performance/), but lower throughput compared to Hotspot Virtual Machine.
 
-⛔️ Recommendation: Use _IBM Semeru Runtime_ only, if you know that you need the OpenJ9 Virtual Machine.
+⛔️ Recommendation: Use _IBM Semeru Runtime_ only if you know that you need the OpenJ9 Virtual Machine.
 
 
 ### Amazon Corretto
