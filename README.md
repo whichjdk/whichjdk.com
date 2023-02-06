@@ -228,7 +228,7 @@ Microsoft may include back ports of bug fixes from newer OpenJDK versions and cl
 
 Microsoft provides releases for major development platforms.
 
-⚠️ Recommendation: Use _Microsoft Build of OpenJDK_, only if you run Java applications directly on Azure.
+⚠️ Recommendation: Use _Microsoft Build of OpenJDK_, only if you run Java applications directly on Azure. There are more established options available.
 
 ### Alibaba Dragonwell
 
@@ -249,7 +249,7 @@ Alibaba provides an OpenJDK build which includes back ports and some _extra feat
 
 SapMachine is yet another OpenJDK Build, maintained by SAP.
 
-⚠️ Recommendation: Use _SapMachine_ only if you are running Java applications on SAP servers.
+⚠️ Recommendation: Use _SapMachine_ only if you are running Java applications on SAP servers. There are more established options available.
 
 
 ### Red Hat OpenJDK
@@ -260,7 +260,7 @@ SapMachine is yet another OpenJDK Build, maintained by SAP.
 
 Red Hat provides OpenJDK builds for LTS versions.
 
-⚠️ Recommendation: Use _Red Hat OpenJDK_ only if you are running Java applications directly on Red Hat Enterprise Linux.
+⚠️ Recommendation: Use _Red Hat OpenJDK_ only if you are running Java applications directly on Red Hat Enterprise Linux. There are more established options available.
 
 
 ### ojdkbuild
