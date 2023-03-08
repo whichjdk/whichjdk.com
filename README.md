@@ -89,7 +89,7 @@ Oracle provides updates regular updates and security patches for these builds.
 
 The main issue with these builds is Oracle's licensing policy:
 
-Until version 10, builds were published under the [Oracle Binary Code License Agreement](https://www.oracle.com/de/downloads/licenses/binary-code-license.html), which effectivly allowed the builds to be used for commercial projects.
+Until version 10, builds were published under the [Oracle Binary Code License Agreement](https://www.oracle.com/de/downloads/licenses/binary-code-license.html), which effectively allowed the builds to be used for commercial projects.
 
 With version 11 to version 16 builds were published under the [Oracle Technology Network License Agreement for Oracle Java SE](https://www.oracle.com/downloads/licenses/javase-license1.html), **which require a fee-based license for usage in production**.
 This is why many new distributions of the OpenJDK have emerged.
@@ -205,7 +205,7 @@ OpenJ9 has a [low memory footprint and starts fast with shared classes](https://
 [Releases](https://aws.amazon.com/de/corretto/) |
 [Docker Images](https://hub.docker.com/_/amazoncorretto)
 
-Since Oracle changed the support and license policy for its OpenJDK builds, major cloud providers decided to establish their own managed OpenJDK builds and providing long-term updates. Apparantly, this is to avoid risks, especially lawsuits against Oracle.
+Since Oracle changed the support and license policy for its OpenJDK builds, major cloud providers decided to establish their own managed OpenJDK builds and providing long-term updates. Apparently, this is to avoid risks, especially lawsuits against Oracle.
 
 In 2018, AWS published _Corretto_, yet another OpenJDK build.
 
@@ -287,7 +287,7 @@ GraalVM is a fully compliant JDK, but much different from all the others builds.
 
 GraalVM was developed by Oracle. 
 It is based on the OpenJDK but includes a new high-performance compiler and a new polyglot virtual machine (can execute code written in different programming languages).
-It is also possible to create platform-specific native executable that are highly optimized and start extremly fast.
+It is also possible to create platform-specific native executable that are highly optimized and start extremely fast.
 
 🤷 Please [share](https://github.com/whichjdk/whichjdk.com/issues/6) your experiences with GraalVM in production, so that we can elaborate a validated recommendation.
 
