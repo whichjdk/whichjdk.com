@@ -13,7 +13,7 @@ This site gives independent, yet opinionated recommendations.
 
 ## TL;DR
 
-✅ Recommendation: Use [Adoptium Eclipse Temurin 21](#adoptium-eclipse-temurin) and ensure that your local version matches the CI and production version.  
+✅ Recommendation: Use [Adoptium Eclipse Temurin 17](#adoptium-eclipse-temurin) and ensure that your local version matches the CI and production version.  
 
 ## Releases
 
@@ -37,7 +37,7 @@ Every three years, the September release will be a Long-Term-Support (LTS) relea
 | [18](https://openjdk.java.net/projects/jdk/18/)     | Feature | 03/2022	     | [UTF-8 by Default](https://openjdk.java.net/jeps/400)   | EOL. Upgrade to 21 now!                                                                                                                                                            |
 | [19](https://openjdk.java.net/projects/jdk/19/)     | Feature | 09/2022	     | Preview and incubator features, only                   | EOL. Upgrade to 21 now!                                                                                                                                                            |
 | [20](https://openjdk.java.net/projects/jdk/20/)     | Feature | 03/2023	     | Preview and incubator features, only                   | EOL. Upgrade to 21 now!                                                                                                                                                            |
-| [**21**](https://openjdk.java.net/projects/jdk/21/)     | **LTS** | 09/2023	     | [Pattern Matching](https://wscp.dev/posts/tech/java-pattern-matching/), Virtual Threads                   | **Current LTS version.**                                                                                                                                                            |
+| [**21**](https://openjdk.java.net/projects/jdk/21/)     | **LTS** | 09/2023	     | [Pattern Matching](https://wscp.dev/posts/tech/java-pattern-matching/), Virtual Threads                   | **Current LTS version.** (Not yet available from all distributions) )                                                                                                                                                           |
 
 You have to decide if you want to stick with the latest LTS version, or if you go with the latest feature release and upgrade every six months.
 Both options are okay, but if you're uncertain, stick with the latest LTS version.
@@ -319,7 +319,7 @@ sdk list java
 and install a specific version:
 
 ```
-sdk install java 21-tem
+sdk install 17.0.8.1-tem
 ```
 
 Validate by checking the version:
