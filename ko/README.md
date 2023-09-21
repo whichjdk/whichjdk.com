@@ -300,7 +300,7 @@ OpenJDK를 기반으로 하지만 새로운 고성능 컴파일러와 새로운 
 
 ### 애플 실리콘
 
-_macOS/AAr4_ 에ch6 대한 공식 지원은 OpenJDK 17 릴리즈의 [JEP 391](https://openjdk.java.net/jeps/391)에서 구현되었습니다.
+_macOS/AArch64_ 에 대한 공식 지원은 OpenJDK 17 릴리즈의 [JEP 391](https://openjdk.java.net/jeps/391)에서 구현되었습니다.
 
 macOS _x64_ 빌드는 Rosetta 2에서 안정적으로 실행되지만 에뮬레이션으로 인해 성능이 크게 저하될 수 있습니다.
 저처럼 _Apple Silicon_ Mac에서 개발하는 사람은 네이티브 macOS _AArch64_(일명 _ARM 64_) 빌드의 JDK를 설치해야 합니다.
