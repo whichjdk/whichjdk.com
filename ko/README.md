@@ -1,8 +1,8 @@
 # 어떤 JDK 버전을 사용해야할까요?
 
-> [English](https://whichjdk.com) | 한국어
+> [English](/) | 한국어
 
-<img src="logo.png" alt="Duke가 어떤 JDK를 사용할지 고민하는 사진" width="600" />
+<img src="../logo.png" alt="Duke가 어떤 JDK를 사용할지 고민하는 사진" width="600" />
 
 Java 애플리케이션을 빌드하고 실행하려면 Java 플랫폼과 표준 스펙(Java SE)을 구현하는 Java 컴파일러, 런타임 라이브러리 및 Java 가상 머신(JVM)이 필요합니다.
 
@@ -50,7 +50,7 @@ OpenJDK 프로젝트 자체는 [openjdk.java.net](https://openjdk.java.net)에�
 
 ## 배포판(Distributions)
 
-- [Oracle의 OpenJDK 빌드 (jdk.java.net)](#orcal의-openjdk-빌드-jdkjavanet)
+- [Oracle의 OpenJDK 빌드 (jdk.java.net)](#oracle의-openjdk-빌드-jdkjavanet)
 - [Oracle Java SE Development Kit (JDK)](#oracle-java-se-development-kit-jdk)
 - [Adoptium Eclipse Temurin](#adoptium-eclipse-temurin)
 - [AdoptOpenJDK](#adoptopenjdk)
@@ -79,7 +79,7 @@ Docker 이미지 (n/a)
 **이는 LTS 버전에도 적용됩니다!**
 예를 들어, 오라클의 OpenJDK 11 빌드 버전은 [11.0.2+9](https://jdk.java.net/archive/)이지만, 현재 OpenJDK의 버전은 [11.0.20.1+1](https://wiki.openjdk.java.net/display/JDKUpdates/JDK11u) 입니다.
 
-⛔️ 비추: 특히 LTS 버전을 사용하실 계획이시라면 더더욱 _Oracle의 OpenJDK 빌드_는 사용하지 마세요.
+⛔️ 비추: 특히 LTS 버전을 사용하실 계획이시라면 더더욱 _Oracle의 OpenJDK 빌드_ 는 사용하지 마세요.
 
 
 ### Oracle Java SE Development Kit (JDK)
@@ -98,11 +98,11 @@ JDK 10 버전까지는 [오라클 바이너리 코드 라이선스 계약](https
 JDK 11 버전부터 16버전까지의 빌드들은 [오라클 Java SE용 오라클 기술 네트워크 라이선스 계약](https://www.oracle.com/downloads/licenses/javase-license1.html)에 따라 게시되었으며, **프로덕션 환경에서 사용하려면 유료 라이선스가 필요합니다.**
 이 때문에 많은 새로운 OpenJDK 배포판이 등장했습니다.
 
-JDK 17 버전은 _내부 비즈니스 운영_을 위해 사용할 수 있도록 허용하는 [오라클 무료 이용 약관(NFTC)](https://www.oracle.com/downloads/licenses/no-fee-license.html)에 따라 게시됩니다. 하지만 안타깝게도, _"내부 비즈니스 운영"_이라는 문구는 정의되어 있지 않으며 매우 모호한 문구입니다.(예를 들어, 외부에 공개된 웹 사이트가 내부 비즈니스 운영을 위한 것인지?)
+JDK 17 버전은 _내부 비즈니스 운영_ 을 위해 사용할 수 있도록 허용하는 [오라클 무료 이용 약관(NFTC)](https://www.oracle.com/downloads/licenses/no-fee-license.html)에 따라 게시됩니다. 하지만 안타깝게도, _"내부 비즈니스 운영"_ 이라는 문구는 정의되어 있지 않으며 매우 모호한 문구입니다.(예를 들어, 외부에 공개된 웹 사이트가 내부 비즈니스 운영을 위한 것인지?)
 
 또한, 지금까지의 이러한 불안정한 라이선스 이력을 기반으로 향후 버전 라이선스들이 어떻게 될지 예측할 수 없습니다.
 
-⛔️ 비추: 변호사와 상담해보기 전엔 _Oracle Java SE Development Kit (JDK)_는 사용하지 마세요.
+⛔️ 비추: 변호사와 상담해보기 전엔 _Oracle Java SE Development Kit (JDK)_ 는 사용하지 마세요.
 
 
 ### Adoptium Eclipse Temurin
@@ -114,7 +114,7 @@ JDK 17 버전은 _내부 비즈니스 운영_을 위해 사용할 수 있도록 
 Eclipse Adoptium은 오픈 소스 소프트웨어에 대한 리소스와 전문 거버넌스 모델을 제공하는 Eclipse 재단 산하의 최상위 프로젝트입니다.
 Adoptium 워킹 그룹은 Red Hat, IBM, Microsoft, Azul, iJUG 등 Java 기술에 전략적 관심을 갖고 있는 주요 기업 및 조직으로 구성되어 있습니다. 이전의 AdoptOpenJDK 프로젝트는 Eclipse Adoptium으로 이전되었습니다.
 
-프로젝트와 빌드를 구분하기 위해 Adoptium OpenJDK 빌드들은 _Eclipse Temurin_이라고 부릅니다.
+프로젝트와 빌드를 구분하기 위해 Adoptium OpenJDK 빌드들은 _Eclipse Temurin_ 이라고 부릅니다.
 
 Eclipse Temurin 빌드는 높은 퀄리티 및 벤더 중립적(vendor-neutral)이고, 허용된 라이선스에 다라 [TCK](https://en.wikipedia.org/wiki/Technology_Compatibility_Kit) 테스트를 거쳤습니다.
 
@@ -133,7 +133,7 @@ AdoptOpenJDK 프로젝트는 Eclipse Adoptium의 전신으로, 기본 HotSpot VM
 
 웹사이트와 이전 릴리즈는 보관된 릴리즈에 액세스할 수 있도록 온라인으로 유지됩니다.
 
-⛔️ 비추: _AdoptOpenJDK_는 더이상 사용하지 마세요. 대신 _Adoptium Eclipse Temurin_를 사용하세요.
+⛔️ 비추: _AdoptOpenJDK_ 는 더이상 사용하지 마세요. 대신 _Adoptium Eclipse Temurin_ 를 사용하세요.
 
 
 ### Azul Zulu
@@ -145,12 +145,12 @@ AdoptOpenJDK 프로젝트는 Eclipse Adoptium의 전신으로, 기본 HotSpot VM
 Azul Systems 주식회사는 전문 Java 기술 및 JDK에 대한 상업적 지원을 전문으로 하는 회사입니다.
 Azul은 업계에서 높은 명성을 얻고 있으며 Java 플랫폼의 발전을 위해 다양한 워킹 그룹에 참여하고 있습니다.
 
-Azul은 다양한 운영 체제 및 아키텍처를 위한 _Azul Zulu_라는 오픈 소스 OpenJDK 빌드를 제공합니다.
+Azul은 다양한 운영 체제 및 아키텍처를 위한 _Azul Zulu_ 라는 오픈 소스 OpenJDK 빌드를 제공합니다.
 또한 Azul은 JRE를 제거한 빌드, OpenJFX를 포함한 빌드 등 특수한 요구 사항을 위한 빌드도 제공합니다.
 
 Azul Zulu의 단점은 라이선스 또는 업데이트 정책을 갑자기 변경할 수 있는 단일 회사에 종속된다는 것입니다.
 
-✅ 추천: _OpenJDK의 Azul Zulu 빌드_는 좋은 선택입니다.
+✅ 추천: _OpenJDK의 Azul Zulu 빌드_ 는 좋은 선택입니다.
 
 
 ### Azul Zing
@@ -159,7 +159,7 @@ Azul Zulu의 단점은 라이선스 또는 업데이트 정책을 갑자기 변�
 [릴리즈](https://www.azul.com/products/prime/stream-download/) |
 Docker 이미지 (n/a)
 
-Azul Zing은 상업용 JDK로, 현재 _Azul Platform Prime_이라는 이름으로 판매되고 있습니다.
+Azul Zing은 상업용 JDK로, 현재 _Azul Platform Prime_ 이라는 이름으로 판매되고 있습니다.
 프로덕션용으로 사용하려면 Azul Systems 주식회사와 상용 계약이 필요합니다.
 
 Zing은 OpenJDK 기반이지만, 특허받은 "C4 무중단 GC(Garbage Collector)", "Falcon JIT(Just-In-Time) 컴파일러"(CPU 사용량이 증가하고 시작 및 워밍업 시간이 길어지는 대신 처리량을 최적화), 컴파일러 워밍업 시간을 단축하는 일부 기능(트레이닝 실행의 최적화를 프로파일링하고 파일에 저장하여 Falcon JIT 컴파일러의 느린 워밍업 시간을 완화)이 추가됩니다.
@@ -167,7 +167,7 @@ Zing은 OpenJDK 기반이지만, 특허받은 "C4 무중단 GC(Garbage Collector
 Azul Zing은 GC 중단 시간이 문제가 되는 금융 거래 애플리케이션에서 몇 가지 사용 사례가 있습니다.
 이와 별개로, 일반 OpenJDK에도 그에 대한 대안이 될 수 있는 저지연 GC [Shenandoah](https://wiki.openjdk.java.net/display/shenandoah/Main)와 [ZGC](https://wiki.openjdk.java.net/display/zgc)가 있습니다.
 
-⚠️ 추천: GC 중단시간이 문제가 된다면 _Azul Zing / Azul Platform Prime_을 고려해보세요. 라이선스 없이 프로덕션에서 사용하지 마세요.
+⚠️ 추천: GC 중단시간이 문제가 된다면 _Azul Zing / Azul Platform Prime_ 을 고려해보세요. 라이선스 없이 프로덕션에서 사용하지 마세요.
 
 
 ### BellSoft Liberica JDK
@@ -179,13 +179,13 @@ Azul Zing은 GC 중단 시간이 문제가 되는 금융 거래 애플리케이�
 Azul과 마찬가지로 BellSoft는 전문 Java 기술 및 JDK에 대한 상업적 지원을 전문으로 합니다.
 또한 업계에서 높은 평판을 얻고 있으며 Java 플랫폼의 발전을 위해 다양한 워킹 그룹에 참여하고 있습니다.
 
-BellSoft는 거의 모든 운영 체제 및 아키텍처를 위한 _Liberica JDK_라는 오픈 소스 OpenJDK 빌드를 제공합니다.
+BellSoft는 거의 모든 운영 체제 및 아키텍처를 위한 _Liberica JDK_ 라는 오픈 소스 OpenJDK 빌드를 제공합니다.
 
 널리 사용되는 Spring Boot 프레임워크는 [빌드팩](https://github.com/paketo-buildpacks/bellsoft-liberica)의 런타임으로 Liberica JDK를 선택했습니다.
 
 BellSoft Liberica JDK의 단점은 라이선스 또는 업데이트 정책을 갑자기 변경할 수 있는 단일 회사에 종속된다는 것입니다.
 
-✅ 추천: _BellSoft Liberica JDK_는 좋은 선택입니다.
+✅ 추천: _BellSoft Liberica JDK_ 는 좋은 선택입니다.
 
 
 ### IBM Semeru 런타임
@@ -194,13 +194,13 @@ BellSoft Liberica JDK의 단점은 라이선스 또는 업데이트 정책을 �
 [릴리즈](https://developer.ibm.com/languages/java/semeru-runtimes/downloads/) |
 Docker 이미지 (n/a)
 
-IBM은 J9라는 자체 버전의 JVM을 개발했으며, 이 JVM은 _Eclipse OpenJ9_로 오픈 소스화되었습니다.
+IBM은 J9라는 자체 버전의 JVM을 개발했으며, 이 JVM은 _Eclipse OpenJ9_ 로 오픈 소스화되었습니다.
 기본 HotSpot JVM의 대안이지만 큰 인기를 얻지는 못했습니다.
 
-IBM은 현재 이클립스 OpenJ9 JVM과 일부 OpenJDK 클래스 라이브러리를 기반으로 하는 _Semeru Runtime_이라는 빌드를 제공합니다.
+IBM은 현재 이클립스 OpenJ9 JVM과 일부 OpenJDK 클래스 라이브러리를 기반으로 하는 _Semeru Runtime_ 이라는 빌드를 제공합니다.
 OpenJ9은 [메모리 사용량이 적고 공유 클래스로 빠르게 시작할 수 있지만](https://www.eclipse.org/openj9/performance/), 핫스팟 가상 머신에 비해 처리량이 낮습니다.
 
-⚠️ 추천: OpenJ9 가상 머신이 필요하다는 것을 알고 있는 경우에만 _IBM Semeru 런타임_을 사용하세요.
+⚠️ 추천: OpenJ9 가상 머신이 필요하다는 것을 알고 있는 경우에만 _IBM Semeru 런타임_ 을 사용하세요.
 
 
 ### Amazon Corretto
@@ -211,7 +211,7 @@ OpenJ9은 [메모리 사용량이 적고 공유 클래스로 빠르게 시작할
 
 오라클이 OpenJDK 빌드에 대한 지원 및 라이선스 정책을 변경한 이후, 주요 클라우드 제공업체는 자체적으로 관리형 OpenJDK 빌드를 구축하고 장기 업데이트를 제공하기로 결정했습니다. 이는 위험, 특히 오라클과의 소송을 피하기 위한 것으로 보입니다.
 
-2018년에 AWS는 또 다른 OpenJDK 빌드인 _Corretto_를 발표했습니다.
+2018년에 AWS는 또 다른 OpenJDK 빌드인 _Corretto_ 를 발표했습니다.
 
 AWS는 최신 OpenJDK 버전의 버그 수정 백포트를 포함하며, [주장](https://aws.amazon.com/corretto/faqs/)에 따르면 아직 OpenJDK 프로젝트에 통합되지 않은 패치를 추가할 것이라고 합니다. 아마존은 자사 서비스에 최적화된 대체 [암호화 공급자](https://github.com/corretto/amazon-corretto-crypto-provider)를 구현했습니다. Corretto에서 기본 암호화 구현으로 사용될 [예정](https://aws.amazon.com/blogs/opensource/introducing-amazon-corretto-crypto-provider-accp/)입니다.
 
@@ -226,13 +226,13 @@ AWS는 최신 OpenJDK 버전의 버그 수정 백포트를 포함하며, [주장
 [릴리즈](https://docs.microsoft.com/en-us/java/openjdk/download) |
 [Docker 이미지](https://docs.microsoft.com/en-us/java/openjdk/containers)
 
-2021년에 Microsoft는 또 다른 OpenJDK 빌드인 _Microsoft Build of OpenJDK_를 발표했습니다.
+2021년에 Microsoft는 또 다른 OpenJDK 빌드인 _Microsoft Build of OpenJDK_ 를 발표했습니다.
 
 Microsoft는 이 빌드에 최신 OpenJDK 버전의 버그 수정 백포트를 포함할 수 있으며, 아직 OpenJDK 프로젝트에 통합되지 않은 패치를 추가할 수 있다고 주장합니다.
 
 Microsoft는 주요 개발 플랫폼에 대한 릴리즈를 제공합니다.
 
-⚠️ 추천: Azure에서 직접 Java 애플리케이션을 실행하는 경우에만 _Microsoft 빌드 of OpenJDK_를 사용하세요. 더 다양한 선택지가 있습니다.
+⚠️ 추천: Azure에서 직접 Java 애플리케이션을 실행하는 경우에만 _Microsoft 빌드 of OpenJDK_ 를 사용하세요. 더 다양한 선택지가 있습니다.
 
 ### Alibaba Dragonwell
 
@@ -240,9 +240,9 @@ Microsoft는 주요 개발 플랫폼에 대한 릴리즈를 제공합니다.
 [릴리즈](http://dragonwell-jdk.io) |
 [Docker 이미지](https://github.com/alibaba/dragonwell11/wiki/Use-Dragonwell-11-docker-images)
 
-Alibaba는 백 포트와 일부 _추가 기능_이 포함된 OpenJDK 빌드를 제공합니다.
+Alibaba는 백 포트와 일부 _추가 기능_ 이 포함된 OpenJDK 빌드를 제공합니다.
 
-⛔️ 비추: 정부에서 강제하지 않는 한 _Alibaba Dragonwell_는 사용하지 마세요.
+⛔️ 비추: 정부에서 강제하지 않는 한 _Alibaba Dragonwell_ 는 사용하지 마세요.
 
 
 ### SapMachine
@@ -253,7 +253,7 @@ Alibaba는 백 포트와 일부 _추가 기능_이 포함된 OpenJDK 빌드를 �
 
 SapMachine은 SAP에서 유지 관리하는 또 다른 OpenJDK 빌드입니다.
 
-⚠️ 추천: SAP 서버에서 Java 애플리케이션을 실행하는 경우에만 _SapMachine_을 사용하세요. 더 다양한 선택지가 있습니다.
+⚠️ 추천: SAP 서버에서 Java 애플리케이션을 실행하는 경우에만 _SapMachine_ 을 사용하세요. 더 다양한 선택지가 있습니다.
 
 
 ### Red Hat OpenJDK
@@ -264,7 +264,7 @@ SapMachine은 SAP에서 유지 관리하는 또 다른 OpenJDK 빌드입니다.
 
 Red Hat은 LTS 버전용 OpenJDK 빌드를 제공합니다.
 
-⚠️ 추천: Red Hat Enterprise Linux에서 Java 애플리케이션을 직접 실행하는 경우에만 _Red Hat OpenJDK_를 사용하십시오. 더 다양한 선택지가 있습니다.
+⚠️ 추천: Red Hat Enterprise Linux에서 Java 애플리케이션을 직접 실행하는 경우에만 _Red Hat OpenJDK_ 를 사용하십시오. 더 다양한 선택지가 있습니다.
 
 
 ### ojdkbuild
@@ -278,7 +278,7 @@ ojdkbuild 프로젝트의 목표는 zlib 또는 OpenSSL의 패키지 버전 대�
 ojdkbuild는 CentOS에 포함된 패키지를 사용했습니다.
 Windows 시스템에서 Java 소프트웨어를 개발하여 프로덕션 환경의 Linux 서버에 배포하기 위해 사용했습니다.
 
-⛔️ 비추: 프로젝트가 중단되었으므로 _ojdkbuild_를 사용하지 마세요.
+⛔️ 비추: 프로젝트가 중단되었으므로 _ojdkbuild_ 를 사용하지 마세요.
 
 
 ### GraalVM
@@ -300,7 +300,7 @@ OpenJDK를 기반으로 하지만 새로운 고성능 컴파일러와 새로운 
 
 ### 애플 실리콘
 
-macOS/AArch64_에 대한 공식 지원은 OpenJDK 17 릴리즈의 [JEP 391](https://openjdk.java.net/jeps/391)에서 구현되었습니다.
+_macOS/AAr4_ 에ch6 대한 공식 지원은 OpenJDK 17 릴리즈의 [JEP 391](https://openjdk.java.net/jeps/391)에서 구현되었습니다.
 
 macOS _x64_ 빌드는 Rosetta 2에서 안정적으로 실행되지만 에뮬레이션으로 인해 성능이 크게 저하될 수 있습니다.
 저처럼 _Apple Silicon_ Mac에서 개발하는 사람은 네이티브 macOS _AArch64_(일명 _ARM 64_) 빌드의 JDK를 설치해야 합니다.
@@ -346,7 +346,7 @@ sudo update-java-alternatives
 ### JDK와 JRE의 차이점은 무엇인가요?
 
 일부 배포판은 JDK(Java Development Kit)와 JRE(Java Runtime Environment) 빌드를 제공합니다.
-JDK에는 Java 애플리케이션을 _컴파일, 패키징 및 실행_하기 위한 모든 것이 포함되어 있는 반면, JRE에는 Java 애플리케이션을 _실행_하기 위한 바이너리와 라이브러리만 포함되어 있습니다.
+JDK에는 Java 애플리케이션을 _컴파일, 패키징 및 실행_ 하기 위한 모든 것이 포함되어 있는 반면, JRE에는 Java 애플리케이션을 _실행_ 하기 위한 바이너리와 라이브러리만 포함되어 있습니다.
 JRE는 JDK의 축소 버전으로, 메가바이트 단위로 더 작습니다.
 
 크기가 중요한 경우 [jlink](https://blog.adoptium.net/2021/10/jlink-to-produce-own-runtime/)를 사용하여 자체적으로 축소된 런타임을 생성하는 것을 고려하세요.
@@ -356,11 +356,11 @@ JRE는 JDK의 축소 버전으로, 메가바이트 단위로 더 작습니다.
 
 ### Java EE가 무엇인가요?
 
-_Java EE (Java Platform, Enterprise Edition)_는 _Jakarta EE_로 이름을 변경했습니다.
+_Java EE (Java Platform, Enterprise Edition)_ 는 _Jakarta EE_ 로 이름을 변경했습니다.
 Jakarta EE는 서버 애플리케이션과 프론트엔드를 구축하기 위한 스펙입니다.
 범위면에서, Jakarta EE는 [Spring Boot](https://spring.io/projects/spring-boot), [Micronaut](https://micronaut.io), [Quarkus](https://quarkus.io)와 같은 최신 프레임워크와 비교할 수 있지만, Jakarta EE가 더 복잡하게 느껴집니다.
 
-⚠️ 추천: _자카르타 EE_를 기반으로 새 프로젝트를 시작하지 마세요. 대부분의 사람들이 _Spring Boot_를 사용하는데, 이는 좋은 선택입니다. Java EE에 대한 배경 지식이 풍부하다면 _Quarkus_를 고려해 보세요. Groovy와 Grails를 좋아한다면 _Micronaut_을 고려해 보세요.
+⚠️ 추천: _자카르타 EE_ 를 기반으로 새 프로젝트를 시작하지 마세요. 대부분의 사람들이 _Spring Boot_ 를 사용하는데, 이는 좋은 선택입니다. Java EE에 대한 배경 지식이 풍부하다면 _Quarkus_ 를 고려해 보세요. Groovy와 Grails를 좋아한다면 _Micronaut_ 을 고려해 보세요.
 
 
 ## 이 웹사이트에 대해서
