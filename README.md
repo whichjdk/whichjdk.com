@@ -1,6 +1,6 @@
 # Which Version of JDK Should I Use?
 
-> English | [한국어](https://whichjdk.com/ko)
+> English | [한국어](/ko)
 
 <img src="logo.png" alt="Duke is thinking, which version of JDK to use" width="600" />
 
