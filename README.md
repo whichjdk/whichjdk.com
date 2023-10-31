@@ -21,7 +21,7 @@ This site gives independent, yet opinionated recommendations.
 
 Under the current [JDK release model](https://openjdk.java.net/projects/jdk/), a new feature release with a new major version number is planned every six months, in March and September. Additionally, there are quarterly bug fix updates.
 
-Every three years, the September release will be a Long-Term-Support (LTS) release, which gets updates for at least three years.
+Every two years, the September release will be a Long-Term-Support (LTS) release, which gets updates for at least three years.
 
 
 | JDK Version	                                        | Type    | Release Date | Highlights         | Recommendation                                                                                                                                                                                                                      |
