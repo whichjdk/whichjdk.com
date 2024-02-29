@@ -154,18 +154,16 @@ into production and solution-oriented engineering assistance.
 ### Azul Zing
 
 [Website](https://www.azul.com) |
-[Releases](https://www.azul.com/products/prime/stream-download/) |
-Docker Images (n/a)
+[Releases](https://www.azul.com/products/prime-roadmap/) |
+Docker Images (https://hub.docker.com/u/azul)
 
-Azul Zing is a commercial JDK, currently marketed as _Azul Platform Prime_. 
-It requires a commercial contract with Azul Systems for production use.
+Azul Zing Builds of OpenJDK (Zing) are commercial optimized builds of OpenJDK, currently marketed as Azul Platform Prime. Zing is free for evaluation but requires a commercial contract with Azul Systems for production use. 
 
-Zing is OpenJDK-based, and adds the patented "C4 Pauseless Garbage Collector", the "Falcon JIT Compiler" (that optimizes for throughput at the cost of higher CPU usage and longer start-up and warm-up times), and some features to speed up compiler warm-up time (to mitigate the Falcon JIT Compiler's slower warm-up times by profiling and storing optimizations of training runs in files).
+Zing takes OpenJDK as its base and replaces several key components with optimized versions. The major additions are the C4 Pauseless Garbage Collector (the only generational, production tested pauseless garbage collection available for all major Java versions, including Java 8 and 11), the Falcon JIT Compiler (optimizes code for faster throughput, lower response latencies, and greater carrying capacity), the ReadyNow Warmup Optimizer (learns from previous runs of your application to bring applications to full speed as quickly as possible), and Azul Optimizer Hub (a separate component that offloads JIT compilation from your client machines and lets JVMs learn from each other to reach maximum speed as quickly as possible).
 
-Azul Zing has some use cases in financial trading applications, where GC pauses are a problem.
-Apart from that, the regular OpenJDK contains the free low-pause time GCs [Shenandoah](https://wiki.openjdk.java.net/display/shenandoah/Main) and [ZGC](https://wiki.openjdk.java.net/display/zgc) that may be an alternative.
+Zing is a good choice for latency-sensitive applications that need to guarantee low median latency and minimum latency outliers, applications that aggressively scale up and down and need to be ready to handle traffic as soon as possible, and large fleets of JVMs running an application where the cost of infrastructure is an issue. 
 
-⚠️ Recommendation: Consider _Azul Zing / Azul Platform Prime_ when GC pause times are a problem. Do not use it in production without a license.
+⚠️ Recommendation: Consider _Azul Zing / Azul Platform Prime_ when GC pause times, slow warmup, and large on-prem infrastructure or Cloud costs are a problem. Do not use it in production without a license. 
 
 
 ### BellSoft Liberica JDK
