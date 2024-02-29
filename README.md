@@ -141,13 +141,12 @@ The website and older releases are kept online to access archived releases.
 [Releases](https://www.azul.com/downloads/?package=jdk#download-openjdk) |
 [Docker Images](https://hub.docker.com/r/azul/zulu-openjdk)
 
-Azul Systems, Inc., has specialized in professional Java technologies and commercial support for JDK.
-Azul has a high-industry reputation and is engaged in various working groups to evolve the Java platform.
+Azul Zulu Builds of OpenJDK are no-cost, production-ready open-source, TCK-tested, and certified OpenJDK distributions. 
+They are available for a wide range of hardware platforms and operating systems and are compatible with special requirements, 
+such as stripped-down JREs and builds, including OpenJFX and Coordinated Restore at Checkpoint (CRaC). 
 
-Azul provides open source OpenJDK builds called _Azul Zulu_ for many operating systems and architectures.
-Additionally, Azul provides builds for special requirements, such as stripped down JREs and builds including OpenJFX.
-
-A downside of these builds is the dependency to a single company, that may suddenly change its license or update policies.
+They are supported as part of Azul Platform Core, which provides stabilized security updates for rapid, assured deployment 
+into production and solution-oriented engineering assistance.
 
 ✅ Recommendation: _Azul Zulu Builds of OpenJDK_ are a good choice.
 
