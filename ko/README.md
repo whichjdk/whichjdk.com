@@ -205,8 +205,8 @@ OpenJ9은 [메모리 사용량이 적고 공유 클래스로 빠르게 시작할
 
 ### Amazon Corretto
 
-[웹사이트](https://aws.amazon.com/de/corretto/) |
-[릴리즈](https://aws.amazon.com/de/corretto/) |
+[웹사이트](https://aws.amazon.com/corretto/) |
+[릴리즈](https://aws.amazon.com/corretto/) |
 [Docker 이미지](https://hub.docker.com/_/amazoncorretto)
 
 오라클이 OpenJDK 빌드에 대한 지원 및 라이선스 정책을 변경한 이후, 주요 클라우드 제공업체는 자체적으로 관리형 OpenJDK 빌드를 구축하고 장기 업데이트를 제공하기로 결정했습니다. 이는 위험, 특히 오라클과의 소송을 피하기 위한 것으로 보입니다.
