@@ -201,8 +201,8 @@ OpenJ9 has a [low memory footprint and starts fast with shared classes](https://
 
 ### Amazon Corretto
 
-[Website](https://aws.amazon.com/de/corretto/) |
-[Releases](https://aws.amazon.com/de/corretto/) |
+[Website](https://aws.amazon.com/corretto/) |
+[Releases](https://aws.amazon.com/corretto/) |
 [Docker Images](https://hub.docker.com/_/amazoncorretto)
 
 Since Oracle changed the support and license policy for its OpenJDK builds, major cloud providers decided to establish their own managed OpenJDK builds and providing long-term updates. Apparently, this is to avoid risks, especially lawsuits against Oracle.
