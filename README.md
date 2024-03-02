@@ -155,7 +155,7 @@ into production and solution-oriented engineering assistance.
 
 [Website](https://www.azul.com) |
 [Releases](https://www.azul.com/products/prime-roadmap/) |
-Docker Images (https://hub.docker.com/u/azul)
+[Docker Images](https://hub.docker.com/u/azul)
 
 Azul Zing Builds of OpenJDK (Zing) are commercial optimized builds of OpenJDK, currently marketed as Azul Platform Prime. Zing is free for evaluation but requires a commercial contract with Azul Systems for production use. 
 
