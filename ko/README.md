@@ -15,13 +15,13 @@ Java 애플리케이션을 빌드하고 실행하려면 Java 플랫폼과 표준
 
 ## 한줄 요약
 
-✅ 추천: [Adoptium Eclipse Temurin 17](#adoptium-eclipse-temurin)을 사용하세요. 그리고 설치된 버전이 CI 및 Production 버전이 맞는지 확인하세요.
+✅ 추천: [Adoptium Eclipse Temurin 21](#adoptium-eclipse-temurin)을 사용하세요. 그리고 설치된 버전이 CI 및 Production 버전이 맞는지 확인하세요.
 
 ## Releases
 
 현재의 [JDK 릴리즈 모델](https://openjdk.java.net/projects/jdk/)에서는 6개월마다(3월과 9월) 새로운 메이저 버전 번호가 포함된 새로운 Feature 릴리즈가 계획되어있습니다. 추가로, 분기별로 버그 수정 업데이트가 있습니다.
 
-매 3년마다 9월에 하는 릴리즈들은 LTS(Long-Term-Support) 릴리즈가 됩니다. LTS 릴리즈들은 릴리즈 이후 최소 3년간 업데이트를 받습니다.
+매 2년마다 9월에 하는 릴리즈들은 LTS(Long-Term-Support) 릴리즈가 됩니다. LTS 릴리즈들은 릴리즈 이후 최소 3년간 업데이트를 받습니다.
 
 
 | JDK 버전 | 릴리즈 타입 | 릴리즈 날짜 | 주요 변경 | 추천 |
@@ -39,7 +39,7 @@ Java 애플리케이션을 빌드하고 실행하려면 Java 플랫폼과 표준
 | [18](https://openjdk.java.net/projects/jdk/18/) | Feature | 2022년 3월 | [UTF-8 by Default](https://openjdk.java.net/jeps/400) | 지원 종료(EOL). 21 버전으로 업그레이드 추천! |
 | [19](https://openjdk.java.net/projects/jdk/19/) | Feature | 2022년 9월 | [미리보기](https://openjdk.org/jeps/12)와 [미완성](https://openjdk.org/jeps/11) 기능들만 추가 | 지원 종료(EOL). 21 버전으로 업그레이드 추천! |
 | [20](https://openjdk.java.net/projects/jdk/20/) | Feature | 2023년 3월 | [미리보기](https://openjdk.org/jeps/12)와 [미완성](https://openjdk.org/jeps/11) 기능들만 추가 | 지원 종료(EOL). 21 버전으로 업그레이드 추천! |
-| [**21**](https://openjdk.java.net/projects/jdk/21/) | **LTS** | 2023년 9월 | [Pattern Matching](https://wscp.dev/posts/tech/java-pattern-matching/), Virtual Threads | **현재의 LTS 버전** (아직 모든 배포판에서 사용할 수 없음 -> 17로 고정) |
+| [**21**](https://openjdk.java.net/projects/jdk/21/) | **LTS** | 2023년 9월 | [Pattern Matching](https://wscp.dev/posts/tech/java-pattern-matching/), Virtual Threads | **현재의 LTS 버전** |
 
 **(1) 최신 LTS 버전을 계속 사용할지**, 아니면 **(2) 최신 릴리즈를 사용하고 6개월마다 업그레이드할지**. 두 가지 선택지가 있습니다.
 두 선택지 모두 괜찮지만, 불확실하다면 최신 LTS 버전을 사용하는 걸 추천합니다.
@@ -157,17 +157,22 @@ Azul Zulu의 단점은 라이선스 또는 업데이트 정책을 갑자기 변�
 
 [웹사이트](https://www.azul.com) |
 [릴리즈](https://www.azul.com/products/prime/stream-download/) |
-Docker 이미지 (n/a)
+[Docker 이미지](https://hub.docker.com/u/azul)
 
-Azul Zing은 상업용 JDK로, 현재 _Azul Platform Prime_ 이라는 이름으로 판매되고 있습니다.
-프로덕션용으로 사용하려면 Azul Systems 주식회사와 상용 계약이 필요합니다.
+Azul Zing은 OpenJDK의 상업적으로 최적화된 빌드입니다. 현재 _Azul Platform Prime_ 으로 판매되고 있습니다.
+무료로 평가(Evaluation) 가능하지만, 프로덕션용으로 사용하려면 Azul Systems 주식회사와 상용 계약이 필요합니다.
 
-Zing은 OpenJDK 기반이지만, 특허받은 "C4 무중단 GC(Garbage Collector)", "Falcon JIT(Just-In-Time) 컴파일러"(CPU 사용량이 증가하고 시작 및 워밍업 시간이 길어지는 대신 처리량을 최적화), 컴파일러 워밍업 시간을 단축하는 일부 기능(트레이닝 실행의 최적화를 프로파일링하고 파일에 저장하여 Falcon JIT 컴파일러의 느린 워밍업 시간을 완화)이 추가됩니다.
+Zing은 OpenJDK를 기반으로 몇 가지 주요 구성 요소를 최적화된 버전으로 대체합니다.
 
-Azul Zing은 GC 중단 시간이 문제가 되는 금융 거래 애플리케이션에서 몇 가지 사용 사례가 있습니다.
-이와 별개로, 일반 OpenJDK에도 그에 대한 대안이 될 수 있는 저지연 GC [Shenandoah](https://wiki.openjdk.java.net/display/shenandoah/Main)와 [ZGC](https://wiki.openjdk.java.net/display/zgc)가 있습니다.
+- `C4 무중단 Garbage Collector` - Java 8 및 11을 포함한 모든 주요 Java 버전에서 사용가능한 유일한 세대별, 프로덕션 테스트를 거친 가비지 컬렉터
+- `Falcon JIT(Just-In-Time) 컴파일러`- 더 빠른 처리량, 더 낮은 응답 레이턴시, 더 큰 전송 용량을 위한 최적화
+- `ReadyNow 웜업 옵티마이저` - 애플리케이션의 기존 실행들을 통해 학습하여 애플리케이션을 최대한 빠르게 최대 속도로 최적화
+- `Azul 옵티마이저 허브` - 클라이언트 머신에서 JIT 컴파일을 오프로드하고 JVM이 서로 학습하여 가능한 한 빨리 최대 속도에 도달할 수 있도록 하는 별도 컴포넌트
 
-⚠️ 추천: GC 중단시간이 문제가 된다면 _Azul Zing / Azul Platform Prime_ 을 고려해보세요. 라이선스 없이 프로덕션에서 사용하지 마세요.
+Azul Zing은 지연시간에 민감한 애플리케이션에 좋은 선택입니다.
+평균 지연시간이 낮고, 최소 지연시간 이상값을 보장해야하거나 공격적으로 확장 및 축소가 가능하고 가능한 한 빨리 트래픽을 처리해야하는 경우, 인프라 비용이 문제가 되는 애플리케이션을 실행하는 대규모 JVM에 적합합니다.
+
+⚠️ 추천: GC 중단시간, Warmup이 느린 경우, 대규모 온프레미스 인프라 및 클라우드 비용이 문제가 된다면 _Azul Zing / Azul Platform Prime_ 을 고려해보세요. 라이선스 없이 프로덕션에서 사용하지 마세요.
 
 
 ### BellSoft Liberica JDK
