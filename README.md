@@ -150,6 +150,8 @@ such as stripped-down JREs and builds, including OpenJFX and Coordinated Restore
 They are supported as part of Azul Platform Core, which provides stabilized security updates for rapid, assured deployment 
 into production and solution-oriented engineering assistance.
 
+A downside of these builds is the dependency to a single company, that may suddenly change its license or update policies.
+
 ✅ Recommendation: _Azul Zulu Builds of OpenJDK_ are a good choice.
 
 
