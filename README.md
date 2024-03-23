@@ -99,7 +99,7 @@ Until version 10, builds were published under the [Oracle Binary Code License Ag
 With version 11 to version 16 builds were published under the [Oracle Technology Network License Agreement for Oracle Java SE](https://www.oracle.com/downloads/licenses/javase-license1.html), **which require a fee-based license for usage in production**.
 This is why many new distributions of the OpenJDK have emerged.
 
-Version 17 is published under the [Oracle No-Fee Terms and Conditions (NFTC)](https://www.oracle.com/downloads/licenses/no-fee-license.html), which allows the usage of the builds for running _internal business operations_. Unfortunately, the phrase "internal business operations," is not defined and is a very vague phrase (e.g. is a public-facing website running internal business operations?).
+Version 17 is published under the [Oracle No-Fee Terms and Conditions (NFTC)](https://www.oracle.com/downloads/licenses/no-fee-license.html), which allows the usage of the builds for running _internal business operations_. Unfortunately, the phrase "internal business operations," is not defined and is a very vague phrase (is a public-facing website running internal business operations?).
 
 Also, based on this volatile licensing history, it is not predictable, how future version will be licensed.
 
