@@ -40,6 +40,8 @@ Every two years, the September release will be a Long-Term-Support (LTS) release
 | [19](https://openjdk.java.net/projects/jdk/19/)     | Feature | 09/2022	     | Preview and incubator features, only                   | EOL. Upgrade to 21 now!                                                                                                                                                            |
 | [20](https://openjdk.java.net/projects/jdk/20/)     | Feature | 03/2023	     | Preview and incubator features, only                   | EOL. Upgrade to 21 now!                                                                                                                                                            |
 | [**21**](https://openjdk.java.net/projects/jdk/21/)     | **LTS** | 09/2023	     | [Pattern Matching](https://wscp.dev/posts/tech/java-pattern-matching/), Virtual Threads                   | **Current LTS version.**                                                                                                                                                           |
+| [22](https://openjdk.java.net/projects/jdk/22/)     | Feature | 03/2024	     | [_](https://openjdk.org/jeps/456)                   | Stick with 21 (latest LTS version).                                                                                                                                                            |
+
 
 You have to decide if you want to stick with the latest LTS version, or if you go with the latest feature release and upgrade every six months.
 Both options are okay, but if you're uncertain, stick with the latest LTS version.
