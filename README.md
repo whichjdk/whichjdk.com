@@ -322,7 +322,7 @@ sdk list java
 and install a specific version:
 
 ```
-sdk install 17.0.8.1-tem
+sdk install java 21.0.3-tem
 ```
 
 Validate by checking the version:
