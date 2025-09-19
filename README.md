@@ -1,5 +1,7 @@
 # Which Version of JDK Should I Use?
 
+> English | [한국어](/ko)
+
 <img src="logo.png" alt="Duke is thinking, which version of JDK to use" width="600" />
 
 To build and run Java applications, a Java Compiler, Java Runtime Libraries, and a Virtual Machine are required that implement the Java Platform, Standard Edition ("Java SE") specification.
@@ -13,33 +15,40 @@ This site gives independent, yet opinionated recommendations.
 
 ## TL;DR
 
-✅ Recommendation: Use [Adoptium Eclipse Temurin 17](#adoptium-eclipse-temurin) and ensure that your local version matches the CI and production version.
+✅ Recommendation: Use [Adoptium Eclipse Temurin 21](#adoptium-eclipse-temurin) and ensure that your local version matches the CI and production version.  
 
 ## Releases
 
 Under the current [JDK release model](https://openjdk.java.net/projects/jdk/), a new feature release with a new major version number is planned every six months, in March and September. Additionally, there are quarterly bug fix updates.
 
-Every three years, the September release will be a Long-Term-Support (LTS) release, which gets updates for at least three years.
+Every two years, the September release will be a Long-Term-Support (LTS) release, which gets updates for at least three years.
 
-JDK Version	| Type    | Release Date | Highlights           | Recommendation
------------ | ------- | ------------ | ---------------------| ---
-**8**       | **LTS** | **03/2014**  | Lambdas              |  Last LTS version under previous release model. Free updates by Oracle [ended](https://www.oracle.com/java/technologies/java-se-support-roadmap.html), but still maintained by others. Upgrade to a 11 or 17 within the next months!
-9           | Feature | 09/2017	     | Modules              | New release model was introduced. EOL. Upgrade to 11 or 17 now!
-10          | Feature | 03/2018	     | var                  | EOL. Upgrade to 11 or 17 now!
-**11**      | **LTS** | **09/2018**	 | New HTTP Client      | Widely used LTS version. Plan upgrade to version 17 within the next months.
-12          | Feature | 03/2019	     |                      | EOL. Upgrade to 17 now!
-13          | Feature | 09/2019	     |                      | EOL. Upgrade to 17 now!
-14          | Feature | 03/2020	     | Switch expressions   | EOL. Upgrade to 17 now!
-15          | Feature | 09/2020	     | Text blocks          | EOL. Upgrade to 17 now!
-16          | Feature | 03/2021	     | Records              | EOL. Upgrade to 17 now!
-**17**      | **LTS** | **09/2021**	 | Sealed Classes       | Current LTS version.
 
-You have to decide, if you want to stick with the latest LTS version, or if you go with the latest feature release and upgrade every six months.
-Both ways are OK.
-If uncertain, stick with the latest LTS version.
+| JDK Version	                                        | Type    | Release Date | Highlights         | Recommendation                                                                                                                                                                                                                      |
+|-----------------------------------------------------|---------|--------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [**8**](https://openjdk.java.net/projects/jdk8/)    | **LTS** | **03/2014**  | Lambdas            | Last LTS version under previous release model. Free updates by Oracle [ended](https://www.oracle.com/java/technologies/java-se-support-roadmap.html), but still maintained by others. Upgrade to 21 now! |
+| [9](https://openjdk.java.net/projects/jdk9/)        | Feature | 09/2017	     | Modules            | New release model was introduced. EOL. Upgrade to 21 now!                                                                                                                                                                     |
+| [10](https://openjdk.java.net/projects/jdk/10/)     | Feature | 03/2018	     | var                | EOL. Upgrade to 21 now!                                                                                                                                                                                                       |
+| [**11**](https://openjdk.java.net/projects/jdk/11/) | **LTS** | **09/2018**	 | New HTTP Client    | Upgrade to 21 now!                                                                                                                                                          |
+| [12](https://openjdk.java.net/projects/jdk/12/)     | Feature | 03/2019	     |                    | EOL. Upgrade to 21 now!                                                                                                                                                                                                             |
+| [13](https://openjdk.java.net/projects/jdk/13/)     | Feature | 09/2019	     |                    | EOL. Upgrade to 21 now!                                                                                                                                                                                                             |
+| [14](https://openjdk.java.net/projects/jdk/14/)     | Feature | 03/2020	     | Switch expressions | EOL. Upgrade to 21 now!                                                                                                                                                                                                             |
+| [15](https://openjdk.java.net/projects/jdk/15/)     | Feature | 09/2020	     | Text blocks        | EOL. Upgrade to 21 now!                                                                                                                                                                                                             |
+| [16](https://openjdk.java.net/projects/jdk/16/)     | Feature | 03/2021	     | Records            | EOL. Upgrade to 21 now!                                                                                                                                                                                                             |
+| [**17**](https://openjdk.java.net/projects/jdk/17/) | **LTS** | **09/2021**	 | Sealed Classes     | It's time to upgrade to 21.                                                                                                                                                                                                           |
+| [18](https://openjdk.java.net/projects/jdk/18/)     | Feature | 03/2022	     | [UTF-8 by Default](https://openjdk.java.net/jeps/400)   | EOL. Upgrade to 21 now!                                                                                                                                                            |
+| [19](https://openjdk.java.net/projects/jdk/19/)     | Feature | 09/2022	     |                    | EOL. Upgrade to 21 now!                                                                                                                                                            |
+| [20](https://openjdk.java.net/projects/jdk/20/)     | Feature | 03/2023	     |                    | EOL. Upgrade to 21 now!                                                                                                                                                            |
+| [**21**](https://openjdk.java.net/projects/jdk/21/)     | **LTS** | **09/2023**	     | [Pattern Matching](https://wscp.dev/posts/tech/java-pattern-matching/), Virtual Threads                   | This is currently the best choice.                                                                                                                                                           |
+| [22](https://openjdk.java.net/projects/jdk/22/)     | Feature | 03/2024	     |                     | Stick with 21.                                                                                                                                                            |
+| [23](https://openjdk.java.net/projects/jdk/23/)     | Feature | 09/2024	     | [Markdown Documentation Comments](https://openjdk.org/jeps/467)                  | Stick with 21.                                                                                                                                                            |
+| [24](https://openjdk.java.net/projects/jdk/24/)     | Feature | 03/2025	     | [Ahead-of-Time Class Loading](https://openjdk.org/jeps/483)                  | Stick with 21.                                                                                                                                                            |
+| [**25**](https://openjdk.java.net/projects/jdk/25/)     |  **LTS** | **09/2025**	     | **Flexible Constructor Bodies** | **Current LTS version.**  Wait a few weeks until builds are available for your distribution and until the first bugs are fixed. So, sticking with 21 is not the worst idea.                                                                                                                                                           |
 
-The OpenJDK project itself is managed on [openjdk.java.net](https://openjdk.java.net), where you can find specifications, source code, and mailing lists.
-But there are no builds that you can download.
+You have to decide if you want to stick with the latest LTS version, or if you go with the latest feature release and upgrade every six months.
+Both options are okay, but if you're uncertain, stick with the latest LTS version.
+
+The OpenJDK project itself is managed on [openjdk.java.net](https://openjdk.java.net) where you can find specifications, source code, and mailing lists, but there are no builds that you can download.
 You need to choose a distribution.
 
 ## Distributions
@@ -68,7 +77,10 @@ Docker Images (n/a)
 
 Oracle provides OpenJDK builds for Linux, macOS and windows in a compressed archive format.
 
-These builds will only be updated for a 6 month period. Updates and security patches will not be available after this short period. This also applies for LTS versions! E.g. the latest OpenJDK 11 build was [11.0.2+9](https://jdk.java.net/archive/) while the current OpenJDK version is [11.0.12+7](https://wiki.openjdk.java.net/display/JDKUpdates/JDK11u).
+These builds will only be updated for a 6-month period. 
+Updates and security patches will not be available after this short period. 
+This also applies for LTS versions! 
+e.g., the latest OpenJDK 11 build was [11.0.2+9](https://jdk.java.net/archive/) while the current OpenJDK version is [11.0.12+7](https://wiki.openjdk.java.net/display/JDKUpdates/JDK11u).
 
 ⛔️ Recommendation: Do not use _OpenJDK builds by Oracle_, particularly if you plan to stick with LTS versions.
 
@@ -84,12 +96,12 @@ Oracle provides updates regular updates and security patches for these builds.
 
 The main issue with these builds is Oracle's licensing policy:
 
-Until version 10 builds were published under the [Oracle Binary Code License Agreement](https://www.oracle.com/de/downloads/licenses/binary-code-license.html), which effectivly allowed the builds to be used for commercial projects.
+Until version 10, builds were published under the [Oracle Binary Code License Agreement](https://www.oracle.com/de/downloads/licenses/binary-code-license.html), which effectively allowed the builds to be used for commercial projects.
 
 With version 11 to version 16 builds were published under the [Oracle Technology Network License Agreement for Oracle Java SE](https://www.oracle.com/downloads/licenses/javase-license1.html), **which require a fee-based license for usage in production**.
 This is why many new distributions of the OpenJDK have emerged.
 
-Version 17 is published under the [Oracle No-Fee Terms and Conditions (NFTC)](https://www.oracle.com/downloads/licenses/no-fee-license.html), which allows the usage of the builds for running _internal business operations_. Unfortunally, it is not defined, what this means. Is a public website running _internal business operations_?
+Version 17 is published under the [Oracle No-Fee Terms and Conditions (NFTC)](https://www.oracle.com/downloads/licenses/no-fee-license.html), which allows the usage of the builds for running _internal business operations_. Unfortunately, the phrase "internal business operations," is not defined and is a very vague phrase (is a public-facing website running internal business operations?).
 
 Also, based on this volatile licensing history, it is not predictable, how future version will be licensed.
 
@@ -99,7 +111,7 @@ Also, based on this volatile licensing history, it is not predictable, how futur
 ### Adoptium Eclipse Temurin
 
 [Website](https://adoptium.net) |
-[Releases](https://adoptium.net/archive.html) |
+[Releases](https://adoptium.net/temurin/releases/) |
 [Docker Images](https://hub.docker.com/_/eclipse-temurin/)
 
 Eclipse Adoptium is a top-level project under the Eclipse Foundation, which provides resources and a professional governance model for open source software.
@@ -133,11 +145,12 @@ The website and older releases are kept online to access archived releases.
 [Releases](https://www.azul.com/downloads/?package=jdk#download-openjdk) |
 [Docker Images](https://hub.docker.com/r/azul/zulu-openjdk)
 
-Azul Systems, Inc., has specialized in professional Java technologies and commercial support for JDK.
-Azul has a high industry reputation and is engaged in various working groups to evolve the Java platform.
+Azul Zulu Builds of OpenJDK are no-cost, production-ready open-source, TCK-tested, and certified OpenJDK distributions. 
+They are available for a wide range of hardware platforms and operating systems and are compatible with special requirements, 
+such as stripped-down JREs and builds, including OpenJFX and Coordinated Restore at Checkpoint (CRaC). 
 
-Azul provides open source OpenJDK builds called _Azul Zulu_ for many operating systems and architectures.
-Additionally, Azul provides builds for special requirements, such as stripped down JREs and builds including OpenJFX.
+They are supported as part of Azul Platform Core, which provides stabilized security updates for rapid, assured deployment 
+into production and solution-oriented engineering assistance.
 
 A downside of these builds is the dependency to a single company, that may suddenly change its license or update policies.
 
@@ -147,18 +160,16 @@ A downside of these builds is the dependency to a single company, that may sudde
 ### Azul Zing
 
 [Website](https://www.azul.com) |
-[Releases](https://www.azul.com/products/prime/stream-download/) |
-Docker Images (n/a)
+[Releases](https://www.azul.com/products/prime-roadmap/) |
+[Docker Images](https://hub.docker.com/u/azul)
 
-Azul Zing is a commercial JDK, currently marketed as _Azul Platform Prime_. 
-It requires a commercial contract with Azul Systems for production use.
+Azul Zing Builds of OpenJDK (Zing) are commercial optimized builds of OpenJDK, currently marketed as Azul Platform Prime. Zing is free for evaluation but requires a commercial contract with Azul Systems for production use. 
 
-Zing is OpenJDK-based, and adds the patented "C4 Pauseless Garbage Collector", the "Falcon JIT Compiler" (that optimizes for throughput at the cost of higher CPU usage and longer start-up and warm-up times), and some features to speed up compiler warm-up time (to mitigate the Falcon JIT Compiler's slower warm-up times by profiling and storing optimizations of training runs in files).
+Zing takes OpenJDK as its base and replaces several key components with optimized versions. The major additions are the C4 Pauseless Garbage Collector (the only generational, production tested pauseless garbage collection available for all major Java versions, including Java 8 and 11), the Falcon JIT Compiler (optimizes code for faster throughput, lower response latencies, and greater carrying capacity), the ReadyNow Warmup Optimizer (learns from previous runs of your application to bring applications to full speed as quickly as possible), and Azul Optimizer Hub (a separate component that offloads JIT compilation from your client machines and lets JVMs learn from each other to reach maximum speed as quickly as possible).
 
-Azul Zing has some use cases in financial trading applications, where GC pauses are a problem.
-Apart from that, the regular OpenJDK contains the free low pause time GCs [Shenandoah](https://wiki.openjdk.java.net/display/shenandoah/Main) and [ZGC](https://wiki.openjdk.java.net/display/zgc) that may be an alternative.
+Zing is a good choice for latency-sensitive applications that need to guarantee low median latency and minimum latency outliers, applications that aggressively scale up and down and need to be ready to handle traffic as soon as possible, and large fleets of JVMs running an application where the cost of infrastructure is an issue. 
 
-⚠️ Recommendation: Consider _Azul Zing / Azul Platform Prime_ when GC pause times are a problem. Do not use it in production without a license.
+⚠️ Recommendation: Consider _Azul Zing / Azul Platform Prime_ when GC pause times, slow warmup, and large on-prem infrastructure or Cloud costs are a problem. Do not use it in production without a license. 
 
 
 ### BellSoft Liberica JDK
@@ -191,16 +202,16 @@ It is an alternative to the default HotSpot Java Virtual Machine, but it has nev
 IBM now provides builds called _Semeru Runtime_ based on the Eclipse OpenJ9 Java Virtual Machine and some OpenJDK class libraries.
 OpenJ9 has a [low memory footprint and starts fast with shared classes](https://www.eclipse.org/openj9/performance/), but lower throughput compared to Hotspot Virtual Machine.
 
-⛔️ Recommendation: Use _IBM Semeru Runtime_ only, if you know that you need the OpenJ9 Virtual Machine.
+⚠️ Recommendation: Use _IBM Semeru Runtime_ only if you know that you need the OpenJ9 Virtual Machine.
 
 
 ### Amazon Corretto
 
-[Website](https://aws.amazon.com/de/corretto/) |
-[Releases](https://aws.amazon.com/de/corretto/) |
+[Website](https://aws.amazon.com/corretto/) |
+[Releases](https://aws.amazon.com/corretto/) |
 [Docker Images](https://hub.docker.com/_/amazoncorretto)
 
-Since Oracle changed the support and license policy for its OpenJDK builds, major cloud providers decided to establish their own managed OpenJDK builds and providing long-term updates. Apparantly, this is to avoid risks, especially lawsuits against Oracle.
+Since Oracle changed the support and license policy for its OpenJDK builds, major cloud providers decided to establish their own managed OpenJDK builds and providing long-term updates. Apparently, this is to avoid risks, especially lawsuits against Oracle.
 
 In 2018, AWS published _Corretto_, yet another OpenJDK build.
 
@@ -223,7 +234,7 @@ Microsoft may include back ports of bug fixes from newer OpenJDK versions and cl
 
 Microsoft provides releases for major development platforms.
 
-⚠️ Recommendation: Use _Microsoft Build of OpenJDK_, only if you run Java applications directly on Azure.
+⚠️ Recommendation: Use _Microsoft Build of OpenJDK_, only if you run Java applications directly on Azure. There are more established options available.
 
 ### Alibaba Dragonwell
 
@@ -244,7 +255,7 @@ Alibaba provides an OpenJDK build which includes back ports and some _extra feat
 
 SapMachine is yet another OpenJDK Build, maintained by SAP.
 
-⚠️ Recommendation: Use _SapMachine_ only if you are running Java applications on SAP servers.
+⚠️ Recommendation: Use _SapMachine_ only if you are running Java applications on SAP servers. There are more established options available.
 
 
 ### Red Hat OpenJDK
@@ -255,7 +266,21 @@ SapMachine is yet another OpenJDK Build, maintained by SAP.
 
 Red Hat provides OpenJDK builds for LTS versions.
 
-⚠️ Recommendation: Use _Red Hat OpenJDK_ only if you are running Java applications directly on Red Hat Enterprise Linux.
+⚠️ Recommendation: Use _Red Hat OpenJDK_ only if you are running Java applications directly on Red Hat Enterprise Linux. There are more established options available.
+
+
+### ojdkbuild
+
+[Website](https://github.com/ojdkbuild/ojdkbuild) |
+[Releases](https://github.com/ojdkbuild/ojdkbuild/releases  ) |
+Docker Images (n/a)
+
+The project is discontinued.
+The ojdkbuild project had the goal of providing Windows x86_64 binaries of OpenJDK that are as close in behaviour to Linux OpenJDK packages as possible, e.g. by using system libraries instead of packaged versions of zlib or OpenSSL.
+It used the packages included in CentOS.
+A use case for these builds was to develop Java software on Windows machines and deploy them to Linux servers in production.
+
+⛔️ Recommendation: Do not use _ojdkbuild_, as the project is discontinued.
 
 
 ### GraalVM
@@ -268,7 +293,7 @@ GraalVM is a fully compliant JDK, but much different from all the others builds.
 
 GraalVM was developed by Oracle. 
 It is based on the OpenJDK but includes a new high-performance compiler and a new polyglot virtual machine (can execute code written in different programming languages).
-It is also possible to create platform-specific native executable that are highly optimized and start extremly fast.
+It is also possible to create platform-specific native executable that are highly optimized and start extremely fast.
 
 🤷 Please [share](https://github.com/whichjdk/whichjdk.com/issues/6) your experiences with GraalVM in production, so that we can elaborate a validated recommendation.
 
@@ -278,11 +303,11 @@ It is also possible to create platform-specific native executable that are highl
 
 The official support for _macOS/AArch64_ was implemented with [JEP 391](https://openjdk.java.net/jeps/391) in the OpenJDK 17 release.
 
-macOS _x64_ builds run stable with Rosetta 2, but there is a significant performance hit due to the emulation.
+macOS _x64_ builds run stable with Rosetta 2, but there is a significant performance drop due to emulation.
 People that develop on an _Apple Silicon_ Mac (like me) should install a native macOS _AArch64_ (aka _ARM 64_) build of the JDK.
 
 Most distributions have _macOS/AArch64_ builds for Java 17+, only.
-[BellSoft Liberica](https://bell-sw.com/announcements/2021/03/12/Liberica-on-Apple-Silicon/) and [Azul Zulu](https://www.azul.com/newsroom/azul-announces-support-of-java-builds-of-openjdk-for-apple-silicon/) also provide free _macOS/AArch64_ builds for Java 8 and Java 11.
+[BellSoft Liberica](https://bell-sw.com/announcements/2021/03/12/Liberica-on-Apple-Silicon/), Amazon Corretto, and [Azul Zulu](https://www.azul.com/newsroom/azul-announces-support-of-java-builds-of-openjdk-for-apple-silicon/) also provide free _macOS/AArch64_ builds for Java 8 and Java 11.
 
 
 ## FAQs
@@ -299,7 +324,7 @@ sdk list java
 and install a specific version:
 
 ```
-sdk install java 17.0.1-tem
+sdk install java 21.0.3-tem
 ```
 
 Validate by checking the version:
@@ -327,7 +352,7 @@ Some distributions provide a JDK (Java Development Kit) and a JRE (Java Runtime 
 A JDK includes everything to _compile, package and run_ Java applications, while a JRE only includes the binaries and libraries to _run_ Java applications.
 The JRE is a stripped down version of the JDK, and is smaller in terms of megabytes.
 
-If size matters for you, consider creating your own stripped down runtime using [jlink](https://blog.adoptium.net/2021/10/jlink-to-produce-own-runtime/).
+If size matters for you, consider creating your own stripped-down runtime using [jlink](https://blog.adoptium.net/2021/10/jlink-to-produce-own-runtime/).
 
 For local development, you need a JDK.
 In production you only need a runtime environment, but it is quite common to use the JDK, too.
