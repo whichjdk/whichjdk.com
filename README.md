@@ -234,7 +234,7 @@ Microsoft may include back ports of bug fixes from newer OpenJDK versions and cl
 
 Microsoft provides releases for major development platforms.
 
-⚠️ Recommendation: Use _Microsoft Build of OpenJDK_, only if you run Java applications directly on Azure. There are more established options available.
+⚠️ Recommendation: Use _Microsoft Build of OpenJDK_, only if you run Java applications directly on Azure, or you are wishing to develop with _Minecraft: Java Edition_. There are more established options available.
 
 ### Alibaba Dragonwell
 
