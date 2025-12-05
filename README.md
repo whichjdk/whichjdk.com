@@ -249,7 +249,7 @@ Alibaba provides an OpenJDK build which includes back ports and some _extra feat
 
 ### SapMachine
 
-[Website](https://sap.github.io/SapMachine/) |
+[Website](https://sapmachine.io) |
 [Releases](https://github.com/SAP/SapMachine/releases) |
 [Docker Images](https://hub.docker.com/_/sapmachine)
 
