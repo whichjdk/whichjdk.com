@@ -15,7 +15,7 @@ Java 애플리케이션을 빌드하고 실행하려면 Java 플랫폼과 표준
 
 ## 한줄 요약
 
-✅ 추천: [Adoptium Eclipse Temurin 21](#adoptium-eclipse-temurin)을 사용하세요. 그리고 설치된 버전이 CI 및 Production 버전이 맞는지 확인하세요.
+✅ 추천: [Adoptium Eclipse Temurin 25](#adoptium-eclipse-temurin)를 사용하세요. 그리고 로컬에 설치된 버전이 CI 및 프로덕션 버전과 일치하는지 확인하세요.
 
 ## Releases
 
@@ -26,20 +26,25 @@ Java 애플리케이션을 빌드하고 실행하려면 Java 플랫폼과 표준
 
 | JDK 버전 | 릴리즈 타입 | 릴리즈 날짜 | 주요 변경 | 추천 |
 |--|--|--|--|--|
-| [**8**](https://openjdk.java.net/projects/jdk8/) | **LTS** | **2014년 3월** | Lambdas | 이전 릴리즈 모델의 마지막 LTS 버전. 오라클의 무료 업데이트는 [종료](https://www.oracle.com/java/technologies/java-se-support-roadmap.html)되었지만, 다른 벤더에 의해 계속 유지보수를 하고 있음. 향후 몇 달 내로 11이나 17 버전으로 업그레이드 추천! |
-| [9](https://openjdk.java.net/projects/jdk9/) | Feature | 2017년 9월 | Modules | [새 릴리즈 주기가 소개됨](https://mail.openjdk.org/pipermail/discuss/2017-September/004281.html). 지원 종료(EOL). 17 혹은 21 버전으로 업그레이드 추천! |
-| [10](https://openjdk.java.net/projects/jdk/10/) | Feature | 2018년 3월 | var | 지원 종료(EOL). 17 혹은 21 버전으로 업그레이드 추천! |
-| [**11**](https://openjdk.java.net/projects/jdk/11/) | **LTS** | **2018년 9월** | New HTTP Client    | 지원 종료(EOL). 21 버전으로 업그레이드 추천! |
-| [12](https://openjdk.java.net/projects/jdk/12/) | Feature | 2019년 3월 |                    | 지원 종료(EOL). 21 버전으로 업그레이드 추천! |
-| [13](https://openjdk.java.net/projects/jdk/13/) | Feature | 2019년 9월 |                    | 지원 종료(EOL). 21 버전으로 업그레이드 추천! |
-| [14](https://openjdk.java.net/projects/jdk/14/) | Feature | 2020년 3월 | Switch expressions | 지원 종료(EOL). 21 버전으로 업그레이드 추천! |
-| [15](https://openjdk.java.net/projects/jdk/15/) | Feature | 2020년 9월 | Text blocks        | 지원 종료(EOL). 21 버전으로 업그레이드 추천! |
-| [16](https://openjdk.java.net/projects/jdk/16/) | Feature | 2021년 3월 | Records            | 지원 종료(EOL). 21 버전으로 업그레이드 추천! |
-| [**17**](https://openjdk.java.net/projects/jdk/17/) | **LTS** | **2021년 9월** | Sealed Classes | **지원되는 LTS 버전** 21 버전으로 업그레이드를 고려해보는 것 추천! |
-| [18](https://openjdk.java.net/projects/jdk/18/) | Feature | 2022년 3월 | [UTF-8 by Default](https://openjdk.java.net/jeps/400) | 지원 종료(EOL). 21 버전으로 업그레이드 추천! |
-| [19](https://openjdk.java.net/projects/jdk/19/) | Feature | 2022년 9월 | [미리보기](https://openjdk.org/jeps/12)와 [미완성](https://openjdk.org/jeps/11) 기능들만 추가 | 지원 종료(EOL). 21 버전으로 업그레이드 추천! |
-| [20](https://openjdk.java.net/projects/jdk/20/) | Feature | 2023년 3월 | [미리보기](https://openjdk.org/jeps/12)와 [미완성](https://openjdk.org/jeps/11) 기능들만 추가 | 지원 종료(EOL). 21 버전으로 업그레이드 추천! |
-| [**21**](https://openjdk.java.net/projects/jdk/21/) | **LTS** | 2023년 9월 | [Pattern Matching](https://wscp.dev/posts/tech/java-pattern-matching/), Virtual Threads | **현재의 LTS 버전** |
+| [**8**](https://openjdk.java.net/projects/jdk8/) | **LTS** | **2014년 3월** | Lambdas | 이전 릴리즈 모델의 마지막 LTS 버전. 오라클의 무료 업데이트는 [종료](https://www.oracle.com/java/technologies/java-se-support-roadmap.html)되었지만, 다른 벤더에서 계속 유지보수 중. 25 버전으로 업그레이드 추천! |
+| [9](https://openjdk.java.net/projects/jdk9/) | Feature | 2017년 9월 | Modules | 새 릴리즈 모델이 도입됨. 지원 종료(EOL). 25 버전으로 업그레이드 추천! |
+| [10](https://openjdk.java.net/projects/jdk/10/) | Feature | 2018년 3월 | var | 지원 종료(EOL). 25 버전으로 업그레이드 추천! |
+| [**11**](https://openjdk.java.net/projects/jdk/11/) | **LTS** | **2018년 9월** | New HTTP Client | 25 버전으로 업그레이드 추천! |
+| [12](https://openjdk.java.net/projects/jdk/12/) | Feature | 2019년 3월 | | 지원 종료(EOL). 25 버전으로 업그레이드 추천! |
+| [13](https://openjdk.java.net/projects/jdk/13/) | Feature | 2019년 9월 | | 지원 종료(EOL). 25 버전으로 업그레이드 추천! |
+| [14](https://openjdk.java.net/projects/jdk/14/) | Feature | 2020년 3월 | Switch expressions | 지원 종료(EOL). 25 버전으로 업그레이드 추천! |
+| [15](https://openjdk.java.net/projects/jdk/15/) | Feature | 2020년 9월 | Text blocks | 지원 종료(EOL). 25 버전으로 업그레이드 추천! |
+| [16](https://openjdk.java.net/projects/jdk/16/) | Feature | 2021년 3월 | Records | 지원 종료(EOL). 25 버전으로 업그레이드 추천! |
+| [**17**](https://openjdk.java.net/projects/jdk/17/) | **LTS** | **2021년 9월** | Sealed Classes | 25 버전으로 업그레이드할 때입니다. |
+| [18](https://openjdk.java.net/projects/jdk/18/) | Feature | 2022년 3월 | [UTF-8 by Default](https://openjdk.java.net/jeps/400) | 지원 종료(EOL). 25 버전으로 업그레이드 추천! |
+| [19](https://openjdk.java.net/projects/jdk/19/) | Feature | 2022년 9월 | | 지원 종료(EOL). 25 버전으로 업그레이드 추천! |
+| [20](https://openjdk.java.net/projects/jdk/20/) | Feature | 2023년 3월 | | 지원 종료(EOL). 25 버전으로 업그레이드 추천! |
+| [**21**](https://openjdk.java.net/projects/jdk/21/) | **LTS** | **2023년 9월** | [Pattern Matching](https://wscp.dev/posts/tech/java-pattern-matching/), Virtual Threads | 아직 지원되지만, 25 버전으로 업그레이드를 고려해보세요. |
+| [22](https://openjdk.java.net/projects/jdk/22/) | Feature | 2024년 3월 | | 지원 종료(EOL). 25 버전으로 업그레이드 추천! |
+| [23](https://openjdk.java.net/projects/jdk/23/) | Feature | 2024년 9월 | [Markdown Documentation Comments](https://openjdk.org/jeps/467) | 지원 종료(EOL). 25 버전으로 업그레이드 추천! |
+| [24](https://openjdk.java.net/projects/jdk/24/) | Feature | 2025년 3월 | [Ahead-of-Time Class Loading](https://openjdk.org/jeps/483) | 지원 종료(EOL). 25 버전으로 업그레이드 추천! |
+| [**25**](https://openjdk.java.net/projects/jdk/25/) | **LTS** | **2025년 9월** | **Flexible Constructor Bodies** | 현재 가장 좋은 선택입니다. |
+| [26](https://openjdk.java.net/projects/jdk/26/) | Feature | 2026년 3월 | [HTTP/3 for the HTTP Client API](https://openjdk.org/jeps/517) | 최신 Feature 릴리즈. 6개월마다 업그레이드할 계획이 아니라면 25 버전을 계속 사용하세요. |
 
 **(1) 최신 LTS 버전을 계속 사용할지**, 아니면 **(2) 최신 릴리즈를 사용하고 6개월마다 업그레이드할지**. 두 가지 선택지가 있습니다.
 두 선택지 모두 괜찮지만, 불확실하다면 최신 LTS 버전을 사용하는 걸 추천합니다.
@@ -108,7 +113,7 @@ JDK 17 버전은 _내부 비즈니스 운영_ 을 위해 사용할 수 있도록
 ### Adoptium Eclipse Temurin
 
 [웹사이트](https://adoptium.net) |
-[릴리즈](https://adoptium.net/archive.html) |
+[릴리즈](https://adoptium.net/temurin/releases/) |
 [Docker 이미지](https://hub.docker.com/_/eclipse-temurin/)
 
 Eclipse Adoptium은 오픈 소스 소프트웨어에 대한 리소스와 전문 거버넌스 모델을 제공하는 Eclipse 재단 산하의 최상위 프로젝트입니다.
@@ -148,7 +153,7 @@ Azul은 업계에서 높은 명성을 얻고 있으며 Java 플랫폼의 발전�
 Azul은 다양한 운영 체제 및 아키텍처를 위한 _Azul Zulu_ 라는 오픈 소스 OpenJDK 빌드를 제공합니다.
 또한 Azul은 JRE를 제거한 빌드, OpenJFX를 포함한 빌드 등 특수한 요구 사항을 위한 빌드도 제공합니다.
 
-Azul Zulu의 단점은 라이선스 또는 업데이트 정책을 갑자기 변경할 수 있는 단일 회사에 종속된다는 것입니다.
+Azul Zulu의 단점은 특정 기업의 기술에 의존하다 보니, 그 회사가 갑자기 라이선스나 업데이트 정책을 바꿔버릴 수 있다는 게 단점입니다.
 
 ✅ 추천: _OpenJDK의 Azul Zulu 빌드_ 는 좋은 선택입니다.
 
@@ -156,7 +161,7 @@ Azul Zulu의 단점은 라이선스 또는 업데이트 정책을 갑자기 변�
 ### Azul Zing
 
 [웹사이트](https://www.azul.com) |
-[릴리즈](https://www.azul.com/products/prime/stream-download/) |
+[릴리즈](https://www.azul.com/products/prime-roadmap/) |
 [Docker 이미지](https://hub.docker.com/u/azul)
 
 Azul Zing은 OpenJDK의 상업적으로 최적화된 빌드입니다. 현재 _Azul Platform Prime_ 으로 판매되고 있습니다.
@@ -311,7 +316,7 @@ macOS _x64_ 빌드는 Rosetta 2에서 안정적으로 실행되지만 에뮬레�
 저처럼 _Apple Silicon_ Mac에서 개발하는 사람은 네이티브 macOS _AArch64_(일명 _ARM 64_) 빌드의 JDK를 설치해야 합니다.
 
 대부분의 배포판에는 Java 17+ 전용 _macOS/AArch64_ 빌드가 있습니다.
-[BellSoft Liberica](https://bell-sw.com/announcements/2021/03/12/Liberica-on-Apple-Silicon/) 및 [Azul Zulu](https://www.azul.com/newsroom/azul-announces-support-of-java-builds-of-openjdk-for-apple-silicon/)는 Java 8 및 Java 11용 _macOS/AArch64_ 빌드도 무료로 제공합니다.
+[BellSoft Liberica](https://bell-sw.com/announcements/2021/03/12/Liberica-on-Apple-Silicon/), Amazon Corretto 및 [Azul Zulu](https://www.azul.com/newsroom/azul-announces-support-of-java-builds-of-openjdk-for-apple-silicon/)는 Java 8 및 Java 11용 _macOS/AArch64_ 빌드도 무료로 제공합니다.
 
 
 ## 자주 묻는 질문
@@ -327,7 +332,7 @@ sdk list java
 
 특정 버전을 설치하고 싶다면:
 ```
-sdk install 17.0.8.1-tem
+sdk install java 25.0.2-tem
 ```
 
 버전을 확인하고 싶다면:
