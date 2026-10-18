@@ -196,7 +196,7 @@ A downside of these builds is the dependency to a single company, that may sudde
 
 [Website](https://developer.ibm.com/languages/java/semeru-runtimes/) |
 [Releases](https://developer.ibm.com/languages/java/semeru-runtimes/downloads/) |
-Docker Images (n/a)
+[Docker Images](https://hub.docker.com/_/ibm-semeru-runtimes)
 
 IBM developed its own version of the Java Virtual Machine, called J9 and it was open-sourced as _Eclipse OpenJ9_.
 It is an alternative to the default HotSpot Java Virtual Machine, but it has never gained much popularity.

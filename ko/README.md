@@ -203,7 +203,7 @@ BellSoft Liberica JDK의 단점은 라이선스 또는 업데이트 정책을 �
 
 [웹사이트](https://developer.ibm.com/languages/java/semeru-runtimes/) |
 [릴리즈](https://developer.ibm.com/languages/java/semeru-runtimes/downloads/) |
-Docker 이미지 (n/a)
+[Docker 이미지](https://hub.docker.com/_/ibm-semeru-runtimes)
 
 IBM은 J9라는 자체 버전의 JVM을 개발했으며, 이 JVM은 _Eclipse OpenJ9_ 로 오픈 소스화되었습니다.
 기본 HotSpot JVM의 대안이지만 큰 인기를 얻지는 못했습니다.
