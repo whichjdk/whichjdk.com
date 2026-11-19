@@ -17,6 +17,8 @@ This site gives independent, yet opinionated recommendations.
 
 ✅ Recommendation: Use [Adoptium Eclipse Temurin 25](#adoptium-eclipse-temurin) and ensure that your local version matches the CI and production version.  
 
+🚨 Security notice (11/2026): Java4Shell (CVE-2026-114938) allows remote code execution in Java 17.0.6 and later on x86-64 CPUs with AVX-512 VBMI. All HotSpot-based distributions are affected. Update to 17.0.21.1, 21.0.13.1, 25.0.5.1, or 27.0.1.1 (or later), and check that your Docker images contain the fixed build. Until then, start the JVM with `-XX:-UseBASE64Intrinsics`. See the [Adoptium advisory](https://adoptium.net/news/2026/11/temurin-november-2026-cspu-java4shell) for details.
+
 ## Releases
 
 Under the current [JDK release model](https://openjdk.java.net/projects/jdk/), a new feature release with a new major version number is planned every six months, in March and September. Additionally, there are quarterly bug fix updates.
@@ -326,7 +328,7 @@ sdk list java
 and install a specific version:
 
 ```
-sdk install java 25.0.4-tem
+sdk install java 25.0.5.1+2-tem
 ```
 
 Validate by checking the version:

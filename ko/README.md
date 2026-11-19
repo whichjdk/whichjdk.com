@@ -17,6 +17,8 @@ Java 애플리케이션을 빌드하고 실행하려면 Java 플랫폼과 표준
 
 ✅ 추천: [Adoptium Eclipse Temurin 25](#adoptium-eclipse-temurin)를 사용하세요. 그리고 로컬에 설치된 버전이 CI 및 프로덕션 버전과 일치하는지 확인하세요.
 
+🚨 보안 공지 (2026년 11월): Java4Shell(CVE-2026-114938)은 AVX-512 VBMI를 지원하는 x86-64 CPU에서 Java 17.0.6 이상 버전에 원격 코드 실행을 허용하는 취약점입니다. HotSpot 기반의 모든 배포판이 영향을 받습니다. 17.0.21.1, 21.0.13.1, 25.0.5.1, 27.0.1.1 또는 그 이후 버전으로 업데이트하고, Docker 이미지에 수정된 빌드가 포함되어 있는지 확인하세요. 업데이트 전까지는 `-XX:-UseBASE64Intrinsics` 옵션으로 JVM을 실행하세요. 자세한 내용은 [Adoptium 보안 권고](https://adoptium.net/news/2026/11/temurin-november-2026-cspu-java4shell)를 참고하세요.
+
 ## Releases
 
 현재의 [JDK 릴리즈 모델](https://openjdk.java.net/projects/jdk/)에서는 6개월마다(3월과 9월) 새로운 메이저 버전 번호가 포함된 새로운 Feature 릴리즈가 계획되어있습니다. 추가로, 분기별로 버그 수정 업데이트가 있습니다.
@@ -333,7 +335,7 @@ sdk list java
 
 특정 버전을 설치하고 싶다면:
 ```
-sdk install java 25.0.4-tem
+sdk install java 25.0.5.1+2-tem
 ```
 
 버전을 확인하고 싶다면:
